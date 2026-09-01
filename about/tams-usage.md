@@ -4,7 +4,7 @@ permalink: /about/tams-usage/
 title: How can we use TAMS?
 kicker: About
 hero_image: /images/about_background.png
-prev:
+nav_prev:
   url: /about/fast-turnaround-challenges/
   title: Challenges with fast-turnaround workflows
 ---

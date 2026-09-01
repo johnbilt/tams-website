@@ -8,18 +8,18 @@ layout: default
     {{ content }}
   </div>
 
-  {%- if page.prev or page.next -%}
+  {%- if page.nav_prev or page.nav_next -%}
   <nav class="pagenav">
-    {%- if page.prev -%}
-    <a class="prev" href="{{ page.prev.url | relative_url }}">
+    {%- if page.nav_prev -%}
+    <a class="prev" href="{{ page.nav_prev.url | relative_url }}">
       <span class="lbl">&#8592; Previous</span>
-      <span class="ttl">{{ page.prev.title }}</span>
+      <span class="ttl">{{ page.nav_prev.title }}</span>
     </a>
     {%- endif -%}
-    {%- if page.next -%}
-    <a class="next" href="{{ page.next.url | relative_url }}">
+    {%- if page.nav_next -%}
+    <a class="next" href="{{ page.nav_next.url | relative_url }}">
       <span class="lbl">Next &#8594;</span>
-      <span class="ttl">{{ page.next.title }}</span>
+      <span class="ttl">{{ page.nav_next.title }}</span>
     </a>
     {%- endif -%}
   </nav>

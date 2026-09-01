@@ -5,7 +5,7 @@ title: What is TAMS?
 kicker: About
 subtitle: An introduction to Time Addressable Media and TAMS.
 hero_image: /images/about_background.png
-next:
+nav_next:
   url: /about/fast-turnaround-challenges/
   title: Challenges with fast-turnaround workflows
 ---

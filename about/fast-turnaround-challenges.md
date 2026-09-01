@@ -4,10 +4,10 @@ permalink: /about/fast-turnaround-challenges/
 title: Challenges with fast-turnaround workflows
 kicker: About
 hero_image: /images/about_background.png
-prev:
+nav_prev:
   url: /about/
   title: What is TAMS?
-next:
+nav_next:
   url: /about/tams-usage/
   title: How can we use TAMS?
 ---
