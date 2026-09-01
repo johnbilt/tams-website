@@ -17,6 +17,10 @@ baseurl: "/tams-website"
 github_url: "https://github.com/bbc/tams"
 
 # ── Build ──
+# Self-contained theme — no gem/remote theme. Explicitly disable the GitHub Pages
+# default (jekyll-theme-primer) so it doesn't inject its own layouts/assets
+# (its assets/css/style.css was shadowing ours).
+theme: null
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
 
