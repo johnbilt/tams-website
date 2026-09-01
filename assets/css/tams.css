@@ -37,15 +37,15 @@ img{max-width:100%;height:auto}
 .hero-dark{background:var(--navy);color:var(--white)}
 
 /* ── header ── */
-.topbar{display:flex;align-items:center;gap:36px;padding:0 48px;height:72px}
-.topbar .brand{display:flex;align-items:center;gap:12px}
+.topbar{display:flex;align-items:center;gap:24px 36px;padding:0 48px;min-height:72px;flex-wrap:wrap}
+.topbar .brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .topbar .hd-mark{color:#fff;display:block}
 /* wordmark cap-height matched to the 20px logo mark (decision #13) */
 .topbar .wordmark{font-weight:700;font-size:28px;line-height:1;letter-spacing:-0.015em;color:#fff}
-.hd-nav{display:flex;gap:28px;font-size:12.5px;margin-left:auto;font-family:'IBM Plex Mono',monospace}
-.hd-nav a{color:rgba(255,255,255,0.75)}
+.hd-nav{display:flex;gap:28px;font-size:12.5px;margin-left:auto;font-family:'IBM Plex Mono',monospace;flex-wrap:wrap;min-width:0}
+.hd-nav a{color:rgba(255,255,255,0.75);white-space:nowrap}
 .hd-nav a:hover,.hd-nav a.cur{color:#fff;text-decoration:none}
-.hd-github{background:var(--amber);color:var(--navy);padding:9px 16px}
+.hd-github{background:var(--amber);color:var(--navy);padding:9px 16px;flex-shrink:0}
 .hd-github:hover{text-decoration:none;filter:brightness(1.05)}
 
 /* ── interior page/post hero ──
@@ -112,11 +112,15 @@ img{max-width:100%;height:auto}
 
 /* ── responsive ── */
 @media (max-width:900px){
-  .topbar{gap:16px;padding:0 24px}
-  .hd-nav{gap:16px}
+  .topbar{gap:14px 20px;padding:14px 24px}
+  .hd-nav{gap:14px 18px;order:3;flex-basis:100%;margin-left:0}
   .page-hero,.page-body,.site-footer{padding-left:24px;padding-right:24px}
   .page-hero h1{font-size:34px}
   .site-footer .cols{flex-direction:column;gap:32px}
+}
+/* Very narrow: keep the nav on one line but let it scroll rather than overflow */
+@media (max-width:560px){
+  .hd-nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px}
 }
 
 /* ============================================================
