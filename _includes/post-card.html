@@ -4,7 +4,7 @@
     <div class="body">
       <div class="date">{{ include.post.date | date: "%d %b %Y" }}</div>
       <h3>{{ include.post.title }}</h3>
-      <p>{{ include.post.description | default: include.post.excerpt | strip_html | truncate: 140 }}</p>
+      <p>{{ include.post.description | default: include.post.excerpt | strip_html | truncate: 260 }}</p>
       {%- if include.post.tags.size > 0 -%}
       <div class="tags">{%- for tag in include.post.tags limit:3 -%}<span class="tag">{{ tag }}</span>{%- endfor -%}</div>
       {%- endif -%}

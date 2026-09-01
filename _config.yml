@@ -25,7 +25,7 @@ markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
 
 # ── Blog pagination (jekyll-paginate) ──
-paginate: 9
+paginate: 11
 paginate_path: "/blog/page:num/"
 
 # ── Plugins (all supported by GitHub Pages) ──
