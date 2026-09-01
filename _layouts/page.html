@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- include page-hero.html -%}
+
+<div class="page-body">
+  <div class="content prose">
+    {{ content }}
+  </div>
+
+  {%- if page.prev or page.next -%}
+  <nav class="pagenav">
+    {%- if page.prev -%}
+    <a class="prev" href="{{ page.prev.url | relative_url }}">
+      <span class="lbl">&#8592; Previous</span>
+      <span class="ttl">{{ page.prev.title }}</span>
+    </a>
+    {%- endif -%}
+    {%- if page.next -%}
+    <a class="next" href="{{ page.next.url | relative_url }}">
+      <span class="lbl">Next &#8594;</span>
+      <span class="ttl">{{ page.next.title }}</span>
+    </a>
+    {%- endif -%}
+  </nav>
+  {%- endif -%}
+</div>

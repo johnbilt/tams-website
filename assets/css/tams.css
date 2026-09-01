@@ -175,3 +175,64 @@ img{max-width:100%;height:auto}
   .post-grid{grid-template-columns:1fr}
 }
 @media (max-width:560px){.benefits{grid-template-columns:1fr}}
+
+/* ============================================================
+   Interior page layout — reading column + prev/next nav
+   ============================================================ */
+/* Prose pages (About, Community, guide, …) use a comfortable reading measure,
+   left-aligned. Full-width layouts (events, resources) use their own wrappers. */
+.page-body .prose{max-width:820px}
+.page-body .prose > *:first-child{margin-top:0}
+
+/* Responsive video sits nicely within the reading column */
+.prose .video{margin:0.5em 0}
+
+/* prev / next page navigation */
+.pagenav{max-width:820px;margin:44px 0 0;padding-top:24px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;gap:20px}
+.pagenav a{display:flex;flex-direction:column;max-width:48%;text-decoration:none}
+.pagenav a:hover{text-decoration:none}
+.pagenav .next{text-align:right;margin-left:auto;align-items:flex-end}
+.pagenav .lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint)}
+.pagenav .ttl{font-size:14px;font-weight:600;color:var(--navy);margin-top:4px;line-height:1.35}
+.pagenav a:hover .ttl{color:var(--amber-ink)}
+
+/* ============================================================
+   Events page — featured "upcoming" card + past-events grid
+   ============================================================ */
+.events{padding:56px 48px 72px}
+.events .sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--amber-ink)}
+.events .sec-title{font-size:26px;font-weight:700;letter-spacing:-0.015em;margin:12px 0 24px}
+
+.event-card{display:grid;grid-template-columns:150px 1fr;gap:32px;border:1px solid var(--hair);border-radius:12px;padding:32px;background:var(--white)}
+.ev-date{background:var(--navy);color:#fff;border-radius:10px;padding:20px 12px;text-align:center;align-self:start}
+.ev-date .d{font-size:40px;font-weight:700;line-height:1;letter-spacing:-0.02em}
+.ev-date .m{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-top:6px}
+.ev-date .t{font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(255,255,255,0.6);margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.15)}
+.ev-cat{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;background:rgba(229,161,68,0.15);color:var(--amber-ink);border:1px solid rgba(229,161,68,0.4);border-radius:999px;padding:3px 11px}
+.ev-title{font-size:24px;font-weight:700;letter-spacing:-0.015em;line-height:1.2;margin:14px 0 0}
+.ev-desc{font-size:15px;line-height:1.7;color:var(--soft);margin:14px 0 0}
+.ev-cover-h{font-size:13px;font-weight:600;color:var(--navy);margin:20px 0 0}
+.ev-cover{margin:10px 0 0;padding-left:1.1em}
+.ev-cover li{font-size:14px;color:rgba(20,26,40,0.8);margin:0.3em 0}
+.ev-speakers{font-size:13.5px;color:var(--soft);margin:18px 0 0}
+.ev-speakers strong{color:var(--navy);font-weight:600}
+.ev-actions{margin-top:22px}
+.ev-actions .btn{background:var(--amber);color:var(--navy)}
+.ev-actions .btn:hover{text-decoration:none;filter:brightness(1.05)}
+
+.past-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.past-card{border:1px solid var(--hair);border-radius:10px;padding:22px;background:var(--white);transition:border-color .15s,box-shadow .15s}
+.past-card:hover{border-color:rgba(20,26,40,0.28);box-shadow:0 4px 14px rgba(20,26,40,0.08)}
+.past-card .pd{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.06em;color:var(--faint);text-transform:uppercase}
+.past-card h4{font-size:16px;font-weight:700;letter-spacing:-0.01em;margin:9px 0 6px}
+.past-card p{font-size:13px;line-height:1.6;color:var(--soft);margin:0}
+.past-card .loc{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--amber-ink);margin-top:14px}
+
+@media (max-width:820px){
+  .events{padding-left:24px;padding-right:24px}
+  .event-card{grid-template-columns:1fr}
+  .past-grid{grid-template-columns:1fr}
+  .pagenav{flex-direction:column;gap:24px}
+  .pagenav a{max-width:100%}
+  .pagenav .next{text-align:left;align-items:flex-start;margin-left:0}
+}

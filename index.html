@@ -29,7 +29,7 @@ description: >-
     <div class="eyebrow">What is TAMS?</div>
     <h2 style="font-size:34px;font-weight:700;letter-spacing:-0.02em;line-height:1.15;margin:16px 0 0">A practical implementation of time-addressable media principles</h2>
     <p>Developed by BBC Research &amp; Development, TAMS is designed around storing media chunks in object storage behind an open API. Every frame has a time address &#8212; so broadcast, post, social, and VOD teams can all work from one store, by reference.</p>
-    <a class="more" href="/about/">Learn more about TAMS &#8594;</a>
+    <a class="more" href="{{ '/about/' | relative_url }}">Learn more about TAMS &#8594;</a>
   </div>
   <div class="video">
     <iframe src="https://www.youtube.com/embed/W7WAV65duj0" title="What is TAMS?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -57,7 +57,7 @@ description: >-
       <div class="eyebrow">Latest posts</div>
       <h2>From the community</h2>
     </div>
-    <a class="more" href="/blog/">More posts &#8594;</a>
+    <a class="more" href="{{ '/blog/' | relative_url }}">More posts &#8594;</a>
   </div>
   <div class="post-grid">
     {%- for post in site.posts limit:3 -%}

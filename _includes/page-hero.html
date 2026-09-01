@@ -1,0 +1,10 @@
+{%- comment -%}
+Interior page/post hero. Renders from the current page's front matter:
+  kicker, title, subtitle, hero_image (optional — adds the graduated scrim).
+Shared by the `page` layout and any standalone page that includes it.
+{%- endcomment -%}
+<header class="hero-dark page-hero{% if page.hero_image %} has-image{% endif %}"{% if page.hero_image %} style="--hero-img:url('{{ page.hero_image | relative_url }}')"{% endif %}>
+  {%- if page.kicker %}<div class="eyebrow kicker">{{ page.kicker }}</div>{% endif -%}
+  <h1>{{ page.heading | default: page.title }}</h1>
+  {%- if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif -%}
+</header>
