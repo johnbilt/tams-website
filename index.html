@@ -1,0 +1,78 @@
+---
+layout: default
+title: Home
+description: >-
+  TAMS stores media as chunks in commodity object storage, presented through an
+  open API — enabling content-centric workflows instead of moving files around.
+---
+
+<header class="hero-dark home-hero">
+  <div class="inner">
+    <div class="eyebrow">Time-addressable media store &#183; open-source API specification</div>
+    <h1>Media, addressed by time. Not by files.</h1>
+    <p class="sub">TAMS stores media as chunks in commodity object storage, presented through an open API &#8212; enabling content-centric workflows instead of moving files around.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/bbc/tams" target="_blank" rel="noopener noreferrer">Read the spec &#8594;</a>
+      {%- comment -%} "Join the community" destination TBD — placeholder link (decision #11). {%- endcomment -%}
+      <a class="btn secondary" href="#">Join the community</a>
+    </div>
+  </div>
+  <div class="api-strip">
+    <div><span class="play">&#9646;</span> flow/a2f&#8230; [0:0_600:0)</div>
+    <div>GET /segments</div>
+    <div>200 OK</div>
+  </div>
+</header>
+
+<section class="whatis">
+  <div>
+    <div class="eyebrow">What is TAMS?</div>
+    <h2 style="font-size:34px;font-weight:700;letter-spacing:-0.02em;line-height:1.15;margin:16px 0 0">A practical implementation of time-addressable media principles</h2>
+    <p>Developed by BBC Research &amp; Development, TAMS is designed around storing media chunks in object storage behind an open API. Every frame has a time address &#8212; so broadcast, post, social, and VOD teams can all work from one store, by reference.</p>
+    <a class="more" href="/about/">Learn more about TAMS &#8594;</a>
+  </div>
+  <div class="video">
+    <iframe src="https://www.youtube.com/embed/W7WAV65duj0" title="What is TAMS?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="home-section alt">
+  <div class="eyebrow">Key benefits</div>
+  <h2>One store, every workflow</h2>
+  <div class="benefits">
+    <div class="bcard"><div class="bnum">01</div><h4>Convergence</h4><p>Broadcast, post-production, social, and VOD teams all sourcing content from a single store.</p></div>
+    <div class="bcard"><div class="bnum">02</div><h4>Cost effective</h4><p>Commodity object storage and serverless tech &#8212; no high-performance file systems, no duplicated media.</p></div>
+    <div class="bcard"><div class="bnum">03</div><h4>Interoperability</h4><p>A common API across vendors, so customers pick and choose the tools they want.</p></div>
+    <div class="bcard"><div class="bnum">04</div><h4>Open framework</h4><p>An open-source spec &#8212; build on it without proprietary technology or licence fees.</p></div>
+    <div class="bcard"><div class="bnum">05</div><h4>Live + file, together</h4><p>Built on the same reference architecture as NMOS &#8212; timing and identity preserved between live and stored domains.</p></div>
+    <div class="bcard"><div class="bnum">06</div><h4>Elasticity</h4><p>Scales up and down with the business need &#8212; key for live workloads that are rarely constant.</p></div>
+    <div class="bcard"><div class="bnum">07</div><h4>Workflow acceleration</h4><p>Segments readable the moment they're written, and edit-by-reference beats moving files.</p></div>
+  </div>
+</section>
+
+{%- comment -%} Latest posts — moved to the BOTTOM of the front page (decision #4). Renders once posts are migrated. {%- endcomment -%}
+<section class="home-section">
+  <div class="latest-head">
+    <div>
+      <div class="eyebrow">Latest posts</div>
+      <h2>From the community</h2>
+    </div>
+    <a class="more" href="/blog/">More posts &#8594;</a>
+  </div>
+  <div class="post-grid">
+    {%- for post in site.posts limit:3 -%}
+    <div class="pcard">
+      <a href="{{ post.url | relative_url }}">
+        {%- if post.image -%}<img class="thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">{%- endif -%}
+        <div class="body">
+          <div class="date">{{ post.date | date: "%d %b %Y" }}</div>
+          <h4>{{ post.title }}</h4>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncate: 130 }}</p>
+        </div>
+      </a>
+    </div>
+    {%- else -%}
+    <p class="sec-lead">Posts will appear here once the blog content is migrated.</p>
+    {%- endfor -%}
+  </div>
+</section>

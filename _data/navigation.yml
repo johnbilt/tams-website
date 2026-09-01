@@ -1,0 +1,21 @@
+# Main site navigation (flat — no dropdowns; decision #1).
+# To add "Guide" later, uncomment its entry once the guide pages are ready.
+# "Community" stays until the Solutions page is launched, at which point this
+# entry's title/url switch to Solutions (decision #7).
+main:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
+  - title: Events
+    url: /events/
+  - title: Community
+    url: /community/
+  - title: Resources
+    url: /resources/
+  # - title: Guide
+  #   url: /guide/
+  # - title: Solutions      # swap Community -> Solutions when ready to launch
+  #   url: /solutions/

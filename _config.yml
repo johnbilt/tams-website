@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────────────────────
+# TAMS website — Jekyll config
+# ─────────────────────────────────────────────────────────────
+title: "TAMS"
+tagline: "Time Addressable Media Store"
+description: >-
+  TAMS (Time Addressable Media Store) is an open-source API specification for
+  storing media as time-addressable chunks in commodity object storage.
+url: "https://tams.org"
+# No baseurl — site is served at the domain root (tams.org).
+baseurl: ""
+
+github_url: "https://github.com/bbc/tams"
+
+# ── Build ──
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+# ── Blog pagination (jekyll-paginate) ──
+paginate: 9
+paginate_path: "/blog/page:num/"
+
+# ── Plugins (all supported by GitHub Pages) ──
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ── Collections ──
+# Guide pages live in their own collection so the section can grow later.
+collections:
+  guide:
+    output: true
+    permalink: /guide/:name/
+
+# ── Default front matter ──
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: guide
+    values:
+      layout: guide
+
+# ── Exclude from build ──
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .sass-cache
+  - .jekyll-cache

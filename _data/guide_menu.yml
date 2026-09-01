@@ -1,0 +1,16 @@
+# Guide section sub-navigation (data-driven; decision #2).
+# Add new guide sections here as the pages are written — the guide nav renders
+# from this list, so no markup changes are needed.
+items:
+  - name: TAMS Data Model
+    url: /guide/
+  - name: Reading Content
+    url: /guide/reading-content/
+  - name: Creating Content
+    url: /guide/creating-content/
+  - name: Edit By Reference
+    url: /guide/edit-by-reference/
+  - name: Mono v Muxed Essence
+    url: /guide/mono-v-muxed-essence/
+  - name: Deleting Content
+    url: /guide/deleting-content/

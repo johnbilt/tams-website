@@ -1,0 +1,20 @@
+# Footer link columns (matches the mockup footer).
+columns:
+  - heading: Resources
+    links:
+      - name: TAMS API specification (BBC)
+        url: https://github.com/bbc/tams
+      - name: Reference implementation (AWS)
+        url: https://github.com/awslabs/time-addressable-media-store
+      - name: TAMS tools (AWS)
+        url: https://github.com/awslabs/time-addressable-media-store-tools
+      - name: Implementation guide
+        url: https://aws-solutions-library-samples.github.io/media-entertainment/cloud-native-fast-turnaround-media-workflows-on-aws/index.html
+  - heading: Community
+    links:
+      - name: Blog
+        url: /blog/
+      - name: Events
+        url: /events/
+      - name: About
+        url: /about/
