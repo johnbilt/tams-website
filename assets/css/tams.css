@@ -118,10 +118,6 @@ img{max-width:100%;height:auto}
   .page-hero h1{font-size:34px}
   .site-footer .cols{flex-direction:column;gap:32px}
 }
-/* Very narrow: keep the nav on one line but let it scroll rather than overflow */
-@media (max-width:560px){
-  .hd-nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px}
-}
 
 /* ============================================================
    Homepage — custom sections (no hero image; navy hero + API strip).
