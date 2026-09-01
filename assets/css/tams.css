@@ -361,7 +361,7 @@ img{max-width:100%;height:auto}
 /* ============================================================
    Solutions (Partners directory) — filterable card grid
    ============================================================ */
-.solutions{max-width:1040px;margin:0 auto;padding:56px 48px 72px}
+.solutions{padding:56px 48px 72px}
 .sol-intro{max-width:820px;margin-left:0}
 .sol-intro > *:first-child{margin-top:0}
 
