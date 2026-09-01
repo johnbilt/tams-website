@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<header class="hero-dark page-hero{% if page.hero_image %} has-image{% endif %}"{% if page.hero_image %} style="--hero-img:url('{{ page.hero_image | relative_url }}')"{% endif %}>
+  <div class="eyebrow kicker">Blog</div>
+  <h1>{{ page.title }}</h1>
+  {%- if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif -%}
+  <div class="meta">
+    <span>{{ page.date | date: "%d %b %Y" }}</span>
+    <span style="opacity:0.4">&#183;</span>
+    <span class="byline">By <strong>{{ page.author | default: "the TAMS Community" }}</strong></span>
+  </div>
+  {%- if page.tags.size > 0 -%}
+  <div class="tags">
+    {%- for tag in page.tags -%}<span class="tag">{{ tag }}</span>{%- endfor -%}
+  </div>
+  {%- endif -%}
+</header>
+
+<div class="body-grid">
+  <div>
+    <article class="content">
+      {{ content }}
+    </article>
+
+    <nav class="postnav">
+      {%- if page.previous -%}
+      <a class="prev" href="{{ page.previous.url | relative_url }}">
+        <span class="lbl">&#8592; Older post</span>
+        <span class="ttl">{{ page.previous.title }}</span>
+      </a>
+      {%- endif -%}
+      {%- if page.next -%}
+      <a class="next" href="{{ page.next.url | relative_url }}">
+        <span class="lbl">Newer post &#8594;</span>
+        <span class="ttl">{{ page.next.title }}</span>
+      </a>
+      {%- else -%}
+      <a class="next" href="{{ '/blog/' | relative_url }}">
+        <span class="lbl">All posts &#8594;</span>
+        <span class="ttl">Back to the blog</span>
+      </a>
+      {%- endif -%}
+    </nav>
+  </div>
+
+  {%- include post-sidebar.html -%}
+</div>

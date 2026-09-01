@@ -1,0 +1,30 @@
+<aside class="sidebar">
+
+  <div class="side-sec">
+    <div class="side-h">Recent posts</div>
+    {%- for post in site.posts limit:6 -%}
+    <a class="side-post" href="{{ post.url | relative_url }}">
+      <span class="d">{{ post.date | date: "%d %b %Y" }}</span>
+      <span class="t">{{ post.title }}</span>
+    </a>
+    {%- endfor -%}
+  </div>
+
+  <div class="side-sec">
+    <div class="side-h">Browse by date</div>
+    {%- comment -%}
+      Group posts by year, then by month, with counts. Rendered as a visual
+      index (not clickable) — per-month archive pages need a mechanism not
+      available on GitHub Pages; see migration.md "Future TODOs".
+    {%- endcomment -%}
+    {%- assign by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" -%}
+    {%- for year in by_year -%}
+    <div class="side-year">{{ year.name }}</div>
+    {%- assign by_month = year.items | group_by_exp: "p", "p.date | date: '%B'" -%}
+    {%- for month in by_month -%}
+    <div class="side-month"><span>{{ month.name }}</span><span class="c">{{ month.items | size }}</span></div>
+    {%- endfor -%}
+    {%- endfor -%}
+  </div>
+
+</aside>

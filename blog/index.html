@@ -1,0 +1,55 @@
+---
+layout: default
+title: Blog
+description: Latest news and stories from the TAMS community.
+---
+<header class="hero-dark page-hero has-image" style="--hero-img:url('{{ '/images/blog_background.png' | relative_url }}')">
+  <div class="eyebrow kicker">Community</div>
+  <h1>Blog</h1>
+  <p class="subtitle">Latest news and stories from the TAMS community.</p>
+</header>
+
+<div class="blog-index">
+  <div class="blog-grid">
+
+    <div class="featured-row">
+      {%- for post in paginator.posts limit:2 -%}
+        {%- include post-card.html post=post -%}
+      {%- endfor -%}
+    </div>
+
+    {%- assign standard = paginator.posts | slice: 2, 100 -%}
+    {%- if standard.size > 0 -%}
+    <div class="standard-row">
+      {%- for post in standard -%}
+        {%- include post-card.html post=post -%}
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+  </div>
+
+  {%- if paginator.total_pages > 1 -%}
+  <nav class="pagination">
+    {%- if paginator.previous_page -%}
+      <a href="{{ paginator.previous_page_path | relative_url }}">&#8592; Prev</a>
+    {%- else -%}
+      <span class="disabled">&#8592; Prev</span>
+    {%- endif -%}
+    {%- for p in (1..paginator.total_pages) -%}
+      {%- if p == paginator.page -%}
+        <span class="current">{{ p }}</span>
+      {%- elsif p == 1 -%}
+        <a href="{{ '/blog/' | relative_url }}">1</a>
+      {%- else -%}
+        <a href="{{ site.paginate_path | replace: ':num', p | relative_url }}">{{ p }}</a>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if paginator.next_page -%}
+      <a href="{{ paginator.next_page_path | relative_url }}">Next &#8594;</a>
+    {%- else -%}
+      <span class="disabled">Next &#8594;</span>
+    {%- endif -%}
+  </nav>
+  {%- endif -%}
+</div>
