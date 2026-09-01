@@ -1,0 +1,134 @@
+---
+layout: default
+---
+{%- include page-hero.html -%}
+
+<div class="solutions">
+  <div class="content prose sol-intro">
+    {{ content }}
+  </div>
+
+  <!-- Filter controls -->
+  <details class="sol-filters" id="sol-filters">
+    <summary>
+      <strong>Filter solutions</strong>
+      <span class="sol-chevron" aria-hidden="true">&#9662;</span>
+    </summary>
+    <div class="sol-filter-body">
+      <div class="sol-filter-group">
+        <span class="sol-filter-h">Type</span>
+        <div class="sol-btns">
+          <button class="sol-btn type is-active" data-filter="all">All</button>
+          <button class="sol-btn type" data-filter="open-source">Open Source</button>
+          <button class="sol-btn type" data-filter="commercial">Commercial</button>
+          <button class="sol-btn type" data-filter="professional-services">Professional Services</button>
+        </div>
+      </div>
+      <div class="sol-filter-group">
+        <span class="sol-filter-h">Function</span>
+        <div class="sol-btns">
+          <button class="sol-btn func is-active" data-filter="all">All</button>
+          {%- assign all_functions = "" -%}
+          {%- for partner in site.data.partners -%}
+            {%- for func in partner.functions -%}
+              {%- unless all_functions contains func -%}
+                {%- if all_functions == "" -%}{%- assign all_functions = func -%}
+                {%- else -%}{%- assign all_functions = all_functions | append: "," | append: func -%}{%- endif -%}
+              {%- endunless -%}
+            {%- endfor -%}
+          {%- endfor -%}
+          {%- assign function_list = all_functions | split: "," | sort -%}
+          {%- for func in function_list -%}
+          <button class="sol-btn func" data-filter="{{ func }}">{{ func | capitalize }}</button>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <p id="sol-no-results" class="sol-no-results" hidden>No solutions match the selected filters.</p>
+
+  <div class="sol-grid" id="sol-grid">
+    {%- for partner in site.data.partners -%}
+    <div class="sol-card" data-type="{{ partner.type }}" data-functions="{{ partner.functions | join: ',' }}">
+      {%- if partner.image -%}
+      <div class="sol-card-image"><img src="{{ partner.image | relative_url }}" alt="{{ partner.product | escape }}" loading="lazy"></div>
+      {%- endif -%}
+      <div class="sol-card-body">
+        <div class="sol-card-head">
+          {%- if partner.logo -%}<img class="sol-logo" src="{{ partner.logo | relative_url }}" alt="{{ partner.name | escape }} logo">{%- endif -%}
+          <div>
+            <p class="sol-product">{{ partner.product }}</p>
+            <p class="sol-company">{{ partner.name }}</p>
+          </div>
+        </div>
+        <p class="sol-desc">{{ partner.description | strip_newlines }}</p>
+        <div class="sol-tags">
+          {%- if partner.type == "open-source" -%}<span class="sol-tag type">Open Source</span>
+          {%- elsif partner.type == "commercial" -%}<span class="sol-tag type">Commercial</span>
+          {%- elsif partner.type == "professional-services" -%}<span class="sol-tag type">Professional Services</span>{%- endif -%}
+          {%- for func in partner.functions -%}<span class="sol-tag func">{{ func | capitalize }}</span>{%- endfor -%}
+        </div>
+      </div>
+      {%- if partner.link -%}
+      <a class="sol-card-link" href="{{ partner.link }}" target="_blank" rel="noopener noreferrer">More information &#8599;</a>
+      {%- endif -%}
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+(function () {
+  // Description truncation with show more / less
+  document.querySelectorAll('.sol-desc').forEach(function (desc) {
+    desc.classList.add('is-clamped');
+    if (desc.scrollHeight > desc.clientHeight + 2) {
+      var toggle = document.createElement('button');
+      toggle.className = 'sol-desc-toggle';
+      toggle.type = 'button';
+      toggle.textContent = 'Show more';
+      desc.insertAdjacentElement('afterend', toggle);
+      toggle.addEventListener('click', function () {
+        var clamped = desc.classList.toggle('is-clamped');
+        toggle.textContent = clamped ? 'Show more' : 'Show less';
+      });
+    } else {
+      desc.classList.remove('is-clamped');
+    }
+  });
+
+  // Filtering (Type AND Function)
+  var activeType = 'all', activeFunc = 'all';
+  var cards = document.querySelectorAll('.sol-card');
+  var noResults = document.getElementById('sol-no-results');
+
+  function apply() {
+    var visible = 0;
+    cards.forEach(function (card) {
+      var t = card.getAttribute('data-type');
+      var fns = card.getAttribute('data-functions').split(',');
+      var typeOk = (activeType === 'all') || (t === activeType);
+      var funcOk = (activeFunc === 'all') || (fns.indexOf(activeFunc) !== -1);
+      var show = typeOk && funcOk;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    noResults.hidden = visible !== 0;
+  }
+
+  function wire(selector, setter) {
+    var btns = document.querySelectorAll(selector);
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        setter(btn.getAttribute('data-filter'));
+        apply();
+      });
+    });
+  }
+  wire('.sol-btn.type', function (v) { activeType = v; });
+  wire('.sol-btn.func', function (v) { activeFunc = v; });
+})();
+</script>

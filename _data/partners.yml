@@ -1,0 +1,33 @@
+- name: Techex
+  product: tx darwin
+  logo: /images/partners/techex.png
+  image: /images/partners/techex_txdarwin.png
+  description: >
+    tx darwin provides comprehensive manipulation and syncrhonisation of transport streams ahead of writing to a TAMS store. tx darwin is a software platform which runs in the cloud or on-prem supporting compressed or uncompressed media workflows. Now, it's possible to synchronise miltiple feeds on writing, write as multiple essences or a single combined stream and even perform video.and audio confromance ahead of a TAMS media store.
+  link: https://example.com
+  type: commercial
+  functions:
+    - ingest
+
+- name: CuttingRoom
+  product: Web Based Editing
+  logo: /images/partners/cuttingroom.png
+  image: /images/partners/cuttingroom_editplatform.png
+  description: >
+    Edit directly from your TAMS store in the CuttingRoom Cloud Editor. Add growing TAMS recordings even directly to your timeline. Shoot directly to your TAMS store with the mobile news gathering app CuttingRoom Reporter, enabling editing while shooting.
+  link: https://www.cuttingroom.com/
+  type: commercial
+  functions:
+    - edit
+    - camera
+
+- name: CuttingRoom
+  product: TAMS Store Browser
+  logo: /images/partners/cuttingroom.png
+  image: /images/partners/cuttingroom_tamstool.png
+  description: >
+     This project is a fork of AWS TAMS Tools, an open-source project by Amazon Web Services
+  link: https://github.com/cuttingroom/tamstool
+  type: open-source
+  functions:
+    - browse

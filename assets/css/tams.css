@@ -353,3 +353,70 @@ img{max-width:100%;height:auto}
   .guide-nav{margin-left:0;margin-right:0}
   .ig-grid{grid-template-columns:1fr}
 }
+
+/* ============================================================
+   Solutions (Partners directory) — filterable card grid
+   ============================================================ */
+.solutions{max-width:1040px;margin:0 auto;padding:56px 48px 72px}
+.sol-intro{max-width:820px;margin-left:0}
+.sol-intro > *:first-child{margin-top:0}
+
+.sol-filters{border:1px solid var(--hair);border-radius:10px;background:var(--white);margin:8px 0 28px;overflow:hidden}
+.sol-filters summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;cursor:pointer;list-style:none;font-size:14px}
+.sol-filters summary::-webkit-details-marker{display:none}
+.sol-chevron{transition:transform .2s ease;color:var(--faint)}
+.sol-filters[open] .sol-chevron{transform:rotate(180deg)}
+.sol-filter-body{padding:4px 18px 18px;display:flex;flex-direction:column;gap:16px}
+.sol-filter-h{display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.sol-btns{display:flex;flex-wrap:wrap;gap:8px}
+.sol-btn{font-family:'IBM Plex Mono',monospace;font-size:12px;padding:5px 12px;border:1px solid var(--hair);border-radius:999px;background:var(--white);color:var(--soft);cursor:pointer;transition:all .15s}
+.sol-btn:hover{border-color:var(--amber);color:var(--amber-ink)}
+.sol-btn.is-active{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+.sol-no-results{text-align:center;color:var(--soft);padding:2rem}
+
+.sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sol-card{display:flex;flex-direction:column;border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--white)}
+.sol-card-image{aspect-ratio:3/2;background:var(--paper)}
+.sol-card-image img{width:100%;height:100%;object-fit:cover;display:block}
+.sol-card-body{padding:18px 20px;display:flex;flex-direction:column;flex:1}
+.sol-card-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.sol-logo{max-height:38px;max-width:76px;width:auto;height:auto;object-fit:contain;flex-shrink:0}
+.sol-product{font-size:15px;font-weight:700;letter-spacing:-0.01em;margin:0 0 1px;line-height:1.3;color:var(--navy)}
+.sol-company{font-size:13px;color:var(--soft);margin:0;line-height:1.3}
+.sol-desc{font-size:13px;line-height:1.6;color:var(--soft);margin:0}
+.sol-desc.is-clamped{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.sol-desc-toggle{align-self:flex-start;margin-top:6px;border:0;background:transparent;padding:0;font-size:12px;font-weight:600;color:var(--amber-ink);cursor:pointer}
+.sol-desc-toggle:hover{text-decoration:underline}
+.sol-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.sol-tag{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.04em;border-radius:999px;padding:2px 8px}
+.sol-tag.type{color:var(--amber-ink);background:rgba(229,161,68,0.12);border:1px solid rgba(229,161,68,0.35)}
+.sol-tag.func{color:var(--soft);background:var(--paper);border:1px solid var(--hair)}
+.sol-card-link{border-top:1px solid var(--hair);padding:13px 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;color:var(--amber-ink);text-align:center}
+.sol-card-link:hover{background:var(--paper);text-decoration:none}
+
+@media (max-width:820px){
+  .solutions{padding-left:24px;padding-right:24px}
+  .sol-grid{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   Radial infographic (use-cases) — central hub + spoke cards
+   Reuses .ig-detail / .ig-detail-box / .ig-close / .ig-icon-sm from the guide.
+   ============================================================ */
+.radial{max-width:960px;margin:8px auto 0;display:flex;flex-direction:column;align-items:center}
+.radial-hub{width:150px;height:150px;border-radius:50%;background:var(--navy);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:8px;box-shadow:0 6px 22px rgba(20,26,40,0.28);margin-bottom:28px}
+.radial-hub-icon{font-size:30px;color:var(--amber)}
+.radial-hub-title{font-size:14px;font-weight:700;letter-spacing:-0.01em}
+.radial-spokes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:100%}
+.radial-card{display:flex;align-items:center;gap:14px;text-align:left;width:100%;background:var(--white);border:1px solid var(--hair);border-radius:10px;padding:16px 18px;cursor:pointer;font:inherit;color:inherit;transition:border-color .15s,box-shadow .15s,transform .15s}
+.radial-card:hover{border-color:rgba(20,26,40,0.28);box-shadow:0 6px 16px rgba(20,26,40,0.09);transform:translateY(-2px)}
+.radial-card.is-active{border-color:var(--amber);background:var(--paper)}
+.radial-icon{flex-shrink:0;width:40px;height:40px;border-radius:9px;background:var(--paper);border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:17px}
+.radial-card.is-active .radial-icon{color:var(--amber-ink);border-color:rgba(229,161,68,0.5)}
+.radial-body{display:flex;flex-direction:column;min-width:0}
+.radial-title{font-size:15px;font-weight:700;letter-spacing:-0.01em;color:var(--navy)}
+.radial-summary{font-size:12.5px;line-height:1.5;color:var(--soft);margin-top:3px}
+.radial .ig-detail{width:100%}
+@media (max-width:768px){.radial-spokes{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.radial-spokes{grid-template-columns:1fr}}
