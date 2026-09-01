@@ -179,11 +179,10 @@ img{max-width:100%;height:auto}
 /* ============================================================
    Interior page layout — reading column + prev/next nav
    ============================================================ */
-/* Interior content pages (About, Community, Events) centre their content within
-   the available width so the empty space is balanced on both sides, not dumped
-   on the right. The hero content (via .hero-inner) centres to the same measure
-   so heading and body line up. */
-.page-hero .hero-inner{max-width:920px;margin:0 auto}
+/* Interior content pages (About, Community, Events) centre their BODY content
+   within the available width so the empty space is balanced on both sides.
+   The HERO heading stays left-aligned at the 48px edge on every page (it must
+   never shift position between pages). */
 .page-body .prose{max-width:920px;margin:0 auto}
 .page-body .prose > *:first-child{margin-top:0}
 
