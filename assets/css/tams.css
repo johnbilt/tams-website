@@ -308,7 +308,7 @@ img{max-width:100%;height:auto}
 .resources{padding:56px 48px 72px}
 .resources .sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--amber-ink)}
 .resources .sec-title{font-size:26px;font-weight:700;letter-spacing:-0.015em;margin:12px 0 4px}
-.resources .sec-lead{font-size:15px;color:var(--soft);margin:0 0 28px;max-width:680px}
+.resources .sec-lead{font-size:15px;color:var(--soft);margin:0 0 28px}
 .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .res-card{display:flex;flex-direction:column;border:1px solid var(--hair);border-radius:12px;padding:26px;background:var(--white);transition:border-color .15s,box-shadow .15s,transform .15s}
 .res-card:hover{border-color:rgba(20,26,40,0.28);box-shadow:0 6px 18px rgba(20,26,40,0.09);transform:translateY(-2px)}
@@ -325,7 +325,7 @@ img{max-width:100%;height:auto}
 /* ============================================================
    Guide — section tab nav + data-model infographic
    ============================================================ */
-.guide-nav{max-width:920px;margin:0 auto 24px;border-bottom:2px solid var(--hair);overflow-x:auto}
+.guide-nav{max-width:920px;margin:0 auto 24px;border-bottom:2px solid var(--hair);overflow-x:auto;overflow-y:hidden}
 .guide-nav-items{display:flex;gap:0;white-space:nowrap}
 .guide-nav-item{padding:10px 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.04em;font-weight:600;color:var(--soft);text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color .15s,border-color .15s}
 .guide-nav-item:hover{color:var(--amber-ink);border-bottom-color:var(--hair);text-decoration:none}
@@ -362,7 +362,7 @@ img{max-width:100%;height:auto}
    Solutions (Partners directory) — filterable card grid
    ============================================================ */
 .solutions{padding:56px 48px 72px}
-.sol-intro{max-width:820px;margin-left:0}
+.sol-intro{max-width:none;margin-left:0}
 .sol-intro > *:first-child{margin-top:0}
 
 .sol-filters{border:1px solid var(--hair);border-radius:10px;background:var(--white);margin:8px 0 28px;overflow:hidden}
