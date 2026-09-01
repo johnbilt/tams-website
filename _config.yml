@@ -35,13 +35,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# ── Collections ──
-# Guide pages live in their own collection so the section can grow later.
-collections:
-  guide:
-    output: true
-    permalink: /guide/:name/
-
 # ── Default front matter ──
 defaults:
   - scope:
@@ -49,11 +42,6 @@ defaults:
       type: posts
     values:
       layout: post
-  - scope:
-      path: ""
-      type: guide
-    values:
-      layout: guide
 
 # ── Exclude from build ──
 exclude:

@@ -1,0 +1,12 @@
+{%- comment -%}
+Guide section tab nav, data-driven from _data/guide_menu.yml so new sections are
+easy to add. Active state matches the current page URL.
+{%- endcomment -%}
+<nav class="guide-nav" aria-label="Guide navigation">
+  <div class="guide-nav-items">
+    {%- for item in site.data.guide_menu.items -%}
+      {%- assign item_url = item.url | relative_url -%}
+      <a href="{{ item_url }}" class="guide-nav-item{% if page.url == item.url %} is-active{% endif %}">{{ item.name }}</a>
+    {%- endfor -%}
+  </div>
+</nav>

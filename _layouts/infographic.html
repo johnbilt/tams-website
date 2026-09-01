@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{%- include page-hero.html -%}
+
+<div class="page-body">
+  {%- include guide-nav.html -%}
+
+  <div class="content prose">
+    {{ content }}
+  </div>
+
+  <div class="infographic">
+    <div class="ig-grid">
+      {%- for card in page.cards -%}
+      <button class="ig-card" type="button" data-card="{{ forloop.index }}">
+        <span class="ig-icon"><i class="fas {{ card.icon }}"></i></span>
+        <span class="ig-body">
+          <span class="ig-title">{{ card.title }}</span>
+          <span class="ig-summary">{{ card.summary }}</span>
+        </span>
+      </button>
+      {%- endfor -%}
+    </div>
+
+    {%- for card in page.cards -%}
+    <div class="ig-detail" id="ig-detail-{{ forloop.index }}" hidden>
+      <div class="ig-detail-box">
+        <div class="ig-detail-head">
+          <h2><span class="ig-icon-sm"><i class="fas {{ card.icon }}"></i></span>{{ card.title }}</h2>
+          <button class="ig-close" type="button" aria-label="Close">&times;</button>
+        </div>
+        <div class="content">
+          {{ card.detail | markdownify }}
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+(function () {
+  var cards = document.querySelectorAll('.ig-card');
+  var details = document.querySelectorAll('.ig-detail');
+  function closeAll() {
+    cards.forEach(function (c) { c.classList.remove('is-active'); });
+    details.forEach(function (d) { d.hidden = true; });
+  }
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      var id = card.getAttribute('data-card');
+      var detail = document.getElementById('ig-detail-' + id);
+      var isOpen = !detail.hidden;
+      closeAll();
+      if (!isOpen) {
+        card.classList.add('is-active');
+        detail.hidden = false;
+        detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+  document.querySelectorAll('.ig-close').forEach(function (btn) {
+    btn.addEventListener('click', function (e) { e.stopPropagation(); closeAll(); });
+  });
+})();
+</script>
