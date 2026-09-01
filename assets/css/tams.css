@@ -179,16 +179,19 @@ img{max-width:100%;height:auto}
 /* ============================================================
    Interior page layout — reading column + prev/next nav
    ============================================================ */
-/* Prose pages (About, Community, guide, …) use a comfortable reading measure,
-   left-aligned. Full-width layouts (events, resources) use their own wrappers. */
-.page-body .prose{max-width:820px}
+/* Interior content pages (About, Community, Events) centre their content within
+   the available width so the empty space is balanced on both sides, not dumped
+   on the right. The hero content (via .hero-inner) centres to the same measure
+   so heading and body line up. */
+.page-hero .hero-inner{max-width:920px;margin:0 auto}
+.page-body .prose{max-width:920px;margin:0 auto}
 .page-body .prose > *:first-child{margin-top:0}
 
 /* Responsive video sits nicely within the reading column */
 .prose .video{margin:0.5em 0}
 
 /* prev / next page navigation */
-.pagenav{max-width:820px;margin:44px 0 0;padding-top:24px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;gap:20px}
+.pagenav{max-width:920px;margin:44px auto 0;padding-top:24px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;gap:20px}
 .pagenav a{display:flex;flex-direction:column;max-width:48%;text-decoration:none}
 .pagenav a:hover{text-decoration:none}
 .pagenav .next{text-align:right;margin-left:auto;align-items:flex-end}
@@ -199,7 +202,7 @@ img{max-width:100%;height:auto}
 /* ============================================================
    Events page — featured "upcoming" card + past-events grid
    ============================================================ */
-.events{padding:56px 48px 72px}
+.events{max-width:920px;margin:0 auto;padding:56px 48px 72px}
 .events .sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--amber-ink)}
 .events .sec-title{font-size:26px;font-weight:700;letter-spacing:-0.015em;margin:12px 0 24px}
 
