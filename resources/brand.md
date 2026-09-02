@@ -13,23 +13,21 @@ The TAMS visual identity is built from the specification itself. The mark is **f
 
 The mark is drawn on a fixed **24 × 12 unit grid**: two 5-unit tracks separated by a 2-unit gutter. The top track carries Playhead Amber; the bottom track carries the foreground colour. It sits beside the Geist Bold wordmark (horizontal) or above it (stacked), and works on dark or light backgrounds.
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tams-mark" viewBox="0 0 24 12"><rect x="0" y="0" width="14" height="5" fill="var(--acc,currentColor)"></rect><rect x="16" y="0" width="8" height="5" fill="var(--acc,currentColor)"></rect><rect x="0" y="7" width="6" height="5" fill="currentColor"></rect><rect x="8" y="7" width="16" height="5" fill="currentColor"></rect></symbol></svg>
-
 <div class="brand-lockups">
   <figure>
-    <div class="brand-lockup dark"><span class="lk"><svg class="mk" width="48" height="24" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <div class="brand-lockup dark"><img src="{{ '/resources/brand-kit/tams-lockup-color-dark.png' | relative_url }}" alt="TAMS horizontal lockup in white and amber, for dark backgrounds"></div>
     <figcaption>Horizontal · on Control Navy</figcaption>
   </figure>
   <figure>
-    <div class="brand-lockup light"><span class="lk"><svg class="mk" width="48" height="24" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <div class="brand-lockup light"><img src="{{ '/resources/brand-kit/tams-lockup-color-light.png' | relative_url }}" alt="TAMS horizontal lockup in navy and amber, for light backgrounds"></div>
     <figcaption>Horizontal · on Paper</figcaption>
   </figure>
   <figure>
-    <div class="brand-lockup dark"><span class="lk stacked"><svg class="mk" width="56" height="28" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <div class="brand-lockup dark stacked-fig"><img src="{{ '/resources/brand-kit/tams-lockup-stacked-color-dark.png' | relative_url }}" alt="TAMS stacked lockup in white and amber, for dark backgrounds"></div>
     <figcaption>Stacked · on Control Navy</figcaption>
   </figure>
   <figure>
-    <div class="brand-lockup light"><span class="lk stacked"><svg class="mk" width="56" height="28" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <div class="brand-lockup light stacked-fig"><img src="{{ '/resources/brand-kit/tams-lockup-stacked-color-light.png' | relative_url }}" alt="TAMS stacked lockup in navy and amber, for light backgrounds"></div>
     <figcaption>Stacked · on Paper</figcaption>
   </figure>
 </div>

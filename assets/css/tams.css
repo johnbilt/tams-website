@@ -450,14 +450,10 @@ img{max-width:100%;height:auto}
 /* lockup variants — dark/light × horizontal/stacked */
 .brand-lockups{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:22px 0 8px}
 .brand-lockups figure{margin:0}
-.brand-lockup{border:1px solid var(--hair);border-radius:10px;min-height:132px;display:flex;align-items:center;justify-content:center;padding:28px}
+.brand-lockup{border:1px solid var(--hair);border-radius:10px;min-height:140px;display:flex;align-items:center;justify-content:center;padding:34px}
 .brand-lockup.dark{background:var(--navy);border-color:var(--navy)}
 .brand-lockup.light{background:var(--paper)}
-.lk{display:flex;align-items:center;gap:14px}
-.lk.stacked{flex-direction:column;gap:11px}
-.lk .mk{display:block;flex:none}
-.lk .wm{font-weight:700;letter-spacing:-0.015em;line-height:1;font-size:34px}
-.brand-lockup.dark .lk{color:#fff}
-.brand-lockup.light .lk{color:var(--navy)}
+.brand-lockup img{display:block;width:auto;max-width:100%;max-height:60px}
+.brand-lockup.stacked-fig img{max-height:96px}
 .brand-lockups figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--faint);margin-top:9px;text-align:center}
 @media (max-width:640px){.brand-lockups{grid-template-columns:1fr}}
