@@ -26,20 +26,30 @@ The mark is drawn on a fixed **24 × 12 unit grid**: two 5-unit tracks separated
 A broadcast-gallery navy with a single amber accent — the playhead. **Amber is reserved for emphasis** (the top track, cursors, links, highlights); never use it for body text or large fills.
 
 <div class="brand-palette">
-  <div class="brand-swatch"><div class="chip" style="background:#141A28"></div><div class="lbl"><b>Control Navy</b><code>#141A28</code></div></div>
-  <div class="brand-swatch"><div class="chip" style="background:#FFFFFF"></div><div class="lbl"><b>Signal White</b><code>#FFFFFF</code></div></div>
-  <div class="brand-swatch"><div class="chip" style="background:#F5F4F0"></div><div class="lbl"><b>Paper</b><code>#F5F4F0</code></div></div>
-  <div class="brand-swatch"><div class="chip" style="background:#E5A144"></div><div class="lbl"><b>Playhead Amber</b><code>#E5A144</code></div></div>
+  <div class="brand-swatch"><div class="chip" style="background:#141A28"></div><div class="lbl"><b>Control Navy</b><code>#141A28</code><span class="role">Primary background · ink on light.</span></div></div>
+  <div class="brand-swatch"><div class="chip" style="background:#FFFFFF"></div><div class="lbl"><b>Signal White</b><code>#FFFFFF</code><span class="role">Text on dark · UI surfaces.</span></div></div>
+  <div class="brand-swatch"><div class="chip" style="background:#F5F4F0"></div><div class="lbl"><b>Paper</b><code>#F5F4F0</code><span class="role">Light backgrounds · documents.</span></div></div>
+  <div class="brand-swatch"><div class="chip" style="background:#E5A144"></div><div class="lbl"><b>Playhead Amber</b><code>#E5A144</code><span class="role">Accent only · top track · links.</span></div></div>
 </div>
-
-- **Control Navy** — primary background, ink on light.
-- **Signal White** — text on dark, UI surfaces.
-- **Paper** — light backgrounds, documents.
-- **Playhead Amber** — accent only: the top track, links and highlights.
 
 ## Typography
 
 **Geist** for the wordmark, headlines, UI and body copy. **IBM Plex Mono** for anything machine-adjacent — endpoints, IDs, labels and timeranges. Both typefaces are under the SIL Open Font License.
+
+<div class="type-showcase">
+  <div class="type-card">
+    <div class="tk">Geist</div>
+    <div class="big" style="font-weight:700;font-size:40px">Geist Bold</div>
+    <div class="specimen" style="font-size:18px">Geist Regular for body copy.<br>Aa Bb Cc Dd Ee &mdash; 0 1 2 3 4 5 6 7 8 9</div>
+    <div class="role">wordmark · headlines · UI · body</div>
+  </div>
+  <div class="type-card mono">
+    <div class="tk">IBM Plex Mono</div>
+    <div class="big" style="font-weight:500;font-size:28px">IBM Plex Mono</div>
+    <div class="specimen" style="font-size:13.5px">GET /flows/{flowId}/segments<br>?timerange=[0:0_10:0)</div>
+    <div class="role">descriptor · labels · code · timeranges</div>
+  </div>
+</div>
 
 ## Lockups
 
@@ -55,19 +65,7 @@ The **primary lockup** is the mark beside the Geist Bold wordmark, cap-aligned s
 
 ## Download
 
-Everything is open — no request form, no licence fee. If you need a format that isn't in the kit, open an issue on the [TAMS repository](https://github.com/bbc/tams) and it'll be added for everyone.
+Everything is open — no request form, no licence fee. The logo kit ships as SVG (outlined type, no fonts required) and transparent PNG. If you need a format that isn't in the kit, open an issue on the [TAMS repository](https://github.com/bbc/tams) and it'll be added for everyone.
 
-<div class="brand-downloads">
-  <a class="brand-dl" href="{{ '/resources/brand-kit/TAMS_Brand_Kit_v1.2.zip' | relative_url }}" download>
-    <div class="k">Logo kit &#183; ZIP</div>
-    <h4>TAMS Brand Kit</h4>
-    <p>Logo files in SVG (outlined type, no fonts required) and transparent PNG — horizontal, stacked and mark-only lockups, duotone and single-colour.</p>
-    <span class="go">Download the kit &#8595;</span>
-  </a>
-  <a class="brand-dl" href="{{ '/resources/brand-kit/TAMS_Brand_Identity_Doc_v1.2.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
-    <div class="k">Guidelines &#183; PDF</div>
-    <h4>Brand Identity Document</h4>
-    <p>The full identity sheet: the mark and its construction, clearspace and sizing, colour, typography, lockups, and do's and don'ts.</p>
-    <span class="go">View the guidelines &#8599;</span>
-  </a>
-</div>
+- [Download the TAMS Brand Kit (ZIP)]({{ '/resources/brand-kit/TAMS_Brand_Kit_v1.2.zip' | relative_url }})
+- [View the Brand Identity Document (PDF)]({{ '/resources/brand-kit/TAMS_Brand_Identity_Doc_v1.2.pdf' | relative_url }})
