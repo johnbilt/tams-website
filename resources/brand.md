@@ -11,30 +11,61 @@ The TAMS visual identity is built from the specification itself. The mark is **f
 
 ## The mark
 
-The mark is drawn on a fixed **24 × 12 unit grid**: two 5-unit tracks separated by a 2-unit gutter. The top track carries Playhead Amber; the bottom track carries the foreground colour. It sits beside the Geist Bold wordmark (horizontal) or above it (stacked), and works on dark or light backgrounds.
+The mark is drawn on a fixed **24 × 12 unit grid**: two 5-unit tracks separated by a 2-unit gutter. The top track carries Playhead Amber; the bottom track carries the foreground colour — white on dark backgrounds, navy on light.
 
-<div class="brand-lockups">
+<div class="brand-lockups marks">
   <figure>
-    <div class="brand-lockup dark"><img src="{{ '/resources/brand-kit/tams-lockup-color-dark.png' | relative_url }}" alt="TAMS horizontal lockup in white and amber, for dark backgrounds"></div>
-    <figcaption>Horizontal · on Control Navy</figcaption>
+    <div class="brand-lockup dark"><img src="{{ '/resources/brand-kit/tams-mark-color-dark.png' | relative_url }}" alt="TAMS duotone mark in white and amber, for dark backgrounds"></div>
+    <figcaption>Duotone · on Control Navy</figcaption>
   </figure>
   <figure>
-    <div class="brand-lockup light"><img src="{{ '/resources/brand-kit/tams-lockup-color-light.png' | relative_url }}" alt="TAMS horizontal lockup in navy and amber, for light backgrounds"></div>
-    <figcaption>Horizontal · on Paper</figcaption>
+    <div class="brand-lockup light"><img src="{{ '/resources/brand-kit/tams-mark-color-light.png' | relative_url }}" alt="TAMS duotone mark in navy and amber, for light backgrounds"></div>
+    <figcaption>Duotone · on Paper</figcaption>
   </figure>
   <figure>
-    <div class="brand-lockup dark stacked-fig"><img src="{{ '/resources/brand-kit/tams-lockup-stacked-color-dark.png' | relative_url }}" alt="TAMS stacked lockup in white and amber, for dark backgrounds"></div>
-    <figcaption>Stacked · on Control Navy</figcaption>
+    <div class="brand-lockup dark"><img src="{{ '/resources/brand-kit/tams-mark-mono-white.png' | relative_url }}" alt="TAMS mark in solid white, for dark backgrounds"></div>
+    <figcaption>Mono white · on Control Navy</figcaption>
   </figure>
   <figure>
-    <div class="brand-lockup light stacked-fig"><img src="{{ '/resources/brand-kit/tams-lockup-stacked-color-light.png' | relative_url }}" alt="TAMS stacked lockup in navy and amber, for light backgrounds"></div>
-    <figcaption>Stacked · on Paper</figcaption>
+    <div class="brand-lockup light"><img src="{{ '/resources/brand-kit/tams-mark-mono-navy.png' | relative_url }}" alt="TAMS mark in solid navy, for light backgrounds"></div>
+    <figcaption>Mono navy · on Paper</figcaption>
   </figure>
 </div>
 
 - **Clearspace** — keep clear space of at least one track height on all sides.
 - **Minimum sizes** — avatar at 48 / 32 / 24 px, favicon at 16 px. Below 24 px, use the mark inside its rounded navy **tile**, not the bare mark.
-- **Single colour** — where duotone isn't possible, the mark works in any single colour with all four segments equal.
+- **Single colour** — where the duotone won't work, use the single-colour mark in **Signal White** (on dark) or **Control Navy** (on light) only. Don't recolour it in any other colour.
+
+## Lockup
+
+The **lockup** pairs the mark with the Geist Bold wordmark — set side by side (horizontal) or above (stacked). Use the horizontal lockup by default; the stacked lockup suits square or narrow spaces. Like the mark, it comes in duotone and in single-colour white or navy.
+
+<div class="brand-lockups">
+  <figure>
+    <div class="brand-lockup dark"><img src="{{ '/resources/brand-kit/tams-lockup-color-dark.png' | relative_url }}" alt="TAMS horizontal duotone lockup in white and amber, for dark backgrounds"></div>
+    <figcaption>Horizontal · duotone · on Control Navy</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup light"><img src="{{ '/resources/brand-kit/tams-lockup-color-light.png' | relative_url }}" alt="TAMS horizontal duotone lockup in navy and amber, for light backgrounds"></div>
+    <figcaption>Horizontal · duotone · on Paper</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup dark stacked-fig"><img src="{{ '/resources/brand-kit/tams-lockup-stacked-color-dark.png' | relative_url }}" alt="TAMS stacked duotone lockup in white and amber, for dark backgrounds"></div>
+    <figcaption>Stacked · duotone · on Control Navy</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup light stacked-fig"><img src="{{ '/resources/brand-kit/tams-lockup-stacked-color-light.png' | relative_url }}" alt="TAMS stacked duotone lockup in navy and amber, for light backgrounds"></div>
+    <figcaption>Stacked · duotone · on Paper</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup dark"><img src="{{ '/resources/brand-kit/tams-lockup-mono-white.png' | relative_url }}" alt="TAMS horizontal lockup in solid white, for dark backgrounds"></div>
+    <figcaption>Horizontal · mono white · on Control Navy</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup light"><img src="{{ '/resources/brand-kit/tams-lockup-mono-navy.png' | relative_url }}" alt="TAMS horizontal lockup in solid navy, for light backgrounds"></div>
+    <figcaption>Horizontal · mono navy · on Paper</figcaption>
+  </figure>
+</div>
 
 ## Colour
 

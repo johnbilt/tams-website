@@ -455,5 +455,6 @@ img{max-width:100%;height:auto}
 .brand-lockup.light{background:var(--paper)}
 .brand-lockup img{display:block;width:auto;max-width:100%;max-height:60px}
 .brand-lockup.stacked-fig img{max-height:96px}
+.brand-lockups.marks .brand-lockup img{max-height:72px}
 .brand-lockups figcaption{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:var(--faint);margin-top:9px;text-align:center}
 @media (max-width:640px){.brand-lockups{grid-template-columns:1fr}}
