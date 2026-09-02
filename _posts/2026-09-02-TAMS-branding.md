@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TAMS has a visual identity"
-date: 2026-09-04 09:00:00 +0100
+date: 2026-09-02 09:00:00 +0100
 author: Chris Swan
 excerpt: "A new identity for TAMS, built from the specification itself — and a logo kit that's free for everyone to use."
 image: /images/blog_images/2026-brand-01-lockup.png

@@ -9,13 +9,30 @@ hero_image: /images/resources_background.png
 
 The TAMS visual identity is built from the specification itself. The mark is **four media segments across two timeline tracks**, staggered so the negative space reads as a **T**. There are no curves, no gradients and no illustration — just simple shapes on a grid, which means it stays legible stamped at 16 pixels, printed in a single ink, or stitched into fabric.
 
-<p style="text-align:center;margin:28px 0">
-  <img src="{{ '/images/blog_images/2026-brand-01-lockup.png' | relative_url }}" alt="The TAMS primary lockup: the segment mark beside the TAMS wordmark, white and amber on navy" style="max-width:520px;width:100%;border-radius:10px">
-</p>
-
 ## The mark
 
-The mark is drawn on a fixed **24 × 12 unit grid**: two 5-unit tracks separated by a 2-unit gutter. The top track carries Playhead Amber; the bottom track carries the foreground colour.
+The mark is drawn on a fixed **24 × 12 unit grid**: two 5-unit tracks separated by a 2-unit gutter. The top track carries Playhead Amber; the bottom track carries the foreground colour. It sits beside the Geist Bold wordmark (horizontal) or above it (stacked), and works on dark or light backgrounds.
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tams-mark" viewBox="0 0 24 12"><rect x="0" y="0" width="14" height="5" fill="var(--acc,currentColor)"></rect><rect x="16" y="0" width="8" height="5" fill="var(--acc,currentColor)"></rect><rect x="0" y="7" width="6" height="5" fill="currentColor"></rect><rect x="8" y="7" width="16" height="5" fill="currentColor"></rect></symbol></svg>
+
+<div class="brand-lockups">
+  <figure>
+    <div class="brand-lockup dark"><span class="lk"><svg class="mk" width="48" height="24" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <figcaption>Horizontal · on Control Navy</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup light"><span class="lk"><svg class="mk" width="48" height="24" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <figcaption>Horizontal · on Paper</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup dark"><span class="lk stacked"><svg class="mk" width="56" height="28" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <figcaption>Stacked · on Control Navy</figcaption>
+  </figure>
+  <figure>
+    <div class="brand-lockup light"><span class="lk stacked"><svg class="mk" width="56" height="28" viewBox="0 0 24 12" style="--acc:#E5A144"><use href="#tams-mark"></use></svg><span class="wm">TAMS</span></span></div>
+    <figcaption>Stacked · on Paper</figcaption>
+  </figure>
+</div>
 
 - **Clearspace** — keep clear space of at least one track height on all sides.
 - **Minimum sizes** — avatar at 48 / 32 / 24 px, favicon at 16 px. Below 24 px, use the mark inside its rounded navy **tile**, not the bare mark.
@@ -50,18 +67,6 @@ A broadcast-gallery navy with a single amber accent — the playhead. **Amber is
     <div class="role">descriptor · labels · code · timeranges</div>
   </div>
 </div>
-
-## Lockups
-
-The **primary lockup** is the mark beside the Geist Bold wordmark, cap-aligned so the mark spans exactly the wordmark's cap height. It is duotone, with the top track in Playhead Amber.
-
-## Using the mark
-
-- The primary mark is **duotone** — top track in Playhead Amber.
-- On photography or colour, use the **mono** mark or the **tile**.
-- The wordmark is always **Geist Bold**, tracking &minus;1.5%.
-- The descriptor "time-addressable media store" appears only in supporting copy, never in the lockup.
-- **Don't** re-stagger the segments, rotate or skew the mark, recolour it beyond the duotone, or add outlines/strokes.
 
 ## Download
 
