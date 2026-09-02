@@ -7,12 +7,13 @@ description: >-
   TAMS (Time Addressable Media Store) is an open-source API specification for
   storing media as time-addressable chunks in commodity object storage.
 # ── URL / baseurl ──
-# PREVIEW (now): served as a GitHub Pages project site at
-#   https://johnbilt.github.io/tams-website/
-# AT LAUNCH (tams.org): set  url: "https://tams.org"  and  baseurl: ""  and
-# re-add the CNAME file (see CNAME.disabled) once DNS points at GitHub Pages.
-url: "https://johnbilt.github.io"
-baseurl: "/tams-website"
+# LIVE: served at the tams.org apex domain (CNAME file present).
+# Requires DNS A records for tams.org pointing at GitHub Pages
+# (185.199.108-111.153) and the custom domain set in repo Settings > Pages.
+# For local/project-path preview, temporarily set:
+#   url: "https://johnbilt.github.io"   baseurl: "/tams-website"
+url: "https://tams.org"
+baseurl: ""
 
 github_url: "https://github.com/bbc/tams"
 
