@@ -1,12 +1,6 @@
 <nav class="hero-dark topbar">
   <a class="brand" href="{{ '/' | relative_url }}">
-    <svg width="40" height="20" viewBox="0 0 24 12" class="hd-mark" aria-hidden="true">
-      <rect x="0" y="0" width="14" height="5" fill="var(--amber)"></rect>
-      <rect x="16" y="0" width="8" height="5" fill="var(--amber)"></rect>
-      <rect x="0" y="7" width="6" height="5" fill="currentColor"></rect>
-      <rect x="8" y="7" width="16" height="5" fill="currentColor"></rect>
-    </svg>
-    <span class="wordmark">TAMS</span>
+    <img class="hd-lockup" src="{{ '/assets/img/tams-lockup-color-dark.svg' | relative_url }}" alt="TAMS — Time Addressable Media Store">
   </a>
   <div class="hd-nav">
     {%- for item in site.data.navigation.main -%}
