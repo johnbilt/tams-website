@@ -39,7 +39,7 @@ img{max-width:100%;height:auto}
 /* ── header ── */
 .topbar{display:flex;align-items:center;gap:24px 36px;padding:0 48px;min-height:72px;flex-wrap:wrap}
 .topbar .brand{display:flex;align-items:center;flex-shrink:0}
-.topbar .hd-lockup{display:block;height:26px;width:auto}
+.topbar .hd-lockup{display:block;height:26px;width:auto;max-width:none}
 .hd-nav{display:flex;gap:28px;font-size:12.5px;margin-left:auto;font-family:'IBM Plex Mono',monospace;flex-wrap:wrap;min-width:0}
 .hd-nav a{color:rgba(255,255,255,0.75);white-space:nowrap}
 .hd-nav a:hover,.hd-nav a.cur{color:#fff;text-decoration:none}
@@ -101,7 +101,7 @@ img{max-width:100%;height:auto}
 .site-footer{background:var(--navy);color:#fff;padding:56px 48px 40px}
 .site-footer .cols{display:flex;justify-content:space-between;gap:48px;flex-wrap:wrap}
 .site-footer .lockup{display:block}
-.site-footer .ft-lockup{display:block;height:28px;width:auto}
+.site-footer .ft-lockup{display:block;height:28px;width:auto;max-width:none}
 .site-footer .tagline{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:rgba(255,255,255,0.4);margin-top:26px}
 .site-footer .fcols{display:flex;gap:64px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:2.3}
 .site-footer .fcol-h{color:rgba(255,255,255,0.4);letter-spacing:0.1em;font-size:10px}
