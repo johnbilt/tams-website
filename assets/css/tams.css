@@ -86,7 +86,7 @@ img{max-width:100%;height:auto}
 .content a{color:var(--amber-ink)}
 /* external links (set by default.html) open in a new tab + show an arrow icon */
 .content a.external::after{content:"";display:inline-block;width:0.62em;height:0.62em;margin-left:0.25em;vertical-align:baseline;background-color:currentColor;-webkit-mask:var(--ext-icon) center/contain no-repeat;mask:var(--ext-icon) center/contain no-repeat}
-:root{--ext-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17L17 7M17 7H8M17 7V16'/%3E%3C/svg%3E")}
+:root{--ext-icon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4h6v6M20 4l-9 9'/%3E%3Cpath d='M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6'/%3E%3C/svg%3E")}
 .content hr{border:0;border-top:1px solid var(--hair);margin:2.6em 0}
 .content pre{background:var(--navy);color:#E8E9EC;padding:18px 22px;border-radius:8px;font-size:13px;line-height:1.7;overflow-x:auto;font-family:'IBM Plex Mono',monospace}
 .content :not(pre)>code{font-family:'IBM Plex Mono',monospace;background:var(--paper);border:1px solid var(--hair);border-radius:4px;padding:2px 6px;font-size:0.9em;color:var(--navy)}
