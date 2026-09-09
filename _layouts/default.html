@@ -26,5 +26,23 @@
   {%- include footer.html -%}
 
 </div>
+
+<script>
+// Open external links in the article body in a new tab, and flag them for the
+// external-link icon. Internal links (same host) are left to open in-tab.
+(function () {
+  var links = document.querySelectorAll('.content a[href]');
+  for (var i = 0; i < links.length; i++) {
+    var a = links[i];
+    // a.hostname resolves relative/absolute hrefs against the current page,
+    // so internal links share window.location.hostname.
+    if (a.hostname && a.hostname !== window.location.hostname) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+      a.classList.add('external');
+    }
+  }
+})();
+</script>
 </body>
 </html>
