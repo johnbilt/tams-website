@@ -17,7 +17,7 @@ tags:
     - Konstrukt
 ---
 
-We welcome Mislav Đomlija from Konstrukt who created the Open Source Omakase player to introduce the live playback from TAMS functionality.  
+We welcome a guest writer Mislav Đomlija, Software Engineer at Konstrukt — the company behind the open-source Omakase Player — to introduce the live playback from TAMS functionality.
 
 ---
 
