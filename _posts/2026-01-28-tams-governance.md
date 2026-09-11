@@ -12,29 +12,31 @@ tags:
     - TSC
     - Open Source
     - BBC
+redirect_from:
+    - /2026/01/28/tams-governance.html
 ---
 
-In 2023 BBC Research & Development made the first open source release of TAMS at [https://github.com/bbc/tams/](https://github.com/bbc/tams/), and has owned the repository and co-ordinated contributions ever since. 
+In 2023 BBC Research & Development made the first open source release of TAMS at [https://github.com/bbc/tams/](https://github.com/bbc/tams/), and has owned the repository and co-ordinated contributions ever since.
 However as more systems, solutions and products are built on TAMS, it is clear that it should be owned by the community, and a more formal process put in place to govern the project and ensure longevity and stability.
 
-This blog post will describe our plan to ensure we make the right decisions for the future of TAMS, continuing the BBC's involvement while giving the community more control and ownership over the project. 
+This blog post will describe our plan to ensure we make the right decisions for the future of TAMS, continuing the BBC's involvement while giving the community more control and ownership over the project.
 We're keen to take our time, and to do this right, so we're going to proceed in phases with a period of research and evaluation.
 We're planning to move to an open governance model, under an existing open source organisation such as the [Linux Foundation](https://www.aswf.io/) or projects like the [Academy Software Foundation](https://www.aswf.io/) or the [Alliance for Open Media](https://aomedia.org/).
 
-Fundamentally the TAMS API is a specification for writing interoperable software, and for that reason we feel a software-oriented approach is more appropriate than a more formal standardisation route through SMPTE or similar. 
-The specification will continue to grow and change as the community iterates on what it needs, applying standard software versioning techniques to rapidly bring new capabilities without unduly breaking existing implementations. 
+Fundamentally the TAMS API is a specification for writing interoperable software, and for that reason we feel a software-oriented approach is more appropriate than a more formal standardisation route through SMPTE or similar.
+The specification will continue to grow and change as the community iterates on what it needs, applying standard software versioning techniques to rapidly bring new capabilities without unduly breaking existing implementations.
 We also value building an open ecosystem, without locking into an industry member or geographical organisation, which pushes us towards the approach of other industry projects on a similar journey (notably [MXL](https://github.com/dmf-mxl/mxl)).
 
-Regarding the specific details of open governance, it is not yet clear precisely which project to align to, so initially in a "Setup Period" a Technical Steering Committee (TSC) will be formed of existing contributors (drawn from the BBC, AWS and others), who will be charged with evaluating options and making a decision, which will be shared with the community. 
-Following this (in the “Transition Period”) the TSC will implement this decision, moving the TAMS repository away from the BBC GitHub Organisation, and putting in place remaining parts of the formal governance framework. 
+Regarding the specific details of open governance, it is not yet clear precisely which project to align to, so initially in a "Setup Period" a Technical Steering Committee (TSC) will be formed of existing contributors (drawn from the BBC, AWS and others), who will be charged with evaluating options and making a decision, which will be shared with the community.
+Following this (in the “Transition Period”) the TSC will implement this decision, moving the TAMS repository away from the BBC GitHub Organisation, and putting in place remaining parts of the formal governance framework.
 Part of this process will see the TSC being rebalanced - no organisation will control more than one vote, with those that do in the "Setup Period" relinquishing seats, and new members being found.
 
-For the BBC, TAMS provides the opportunity to build a more diverse media supply chain out of interoperable components which we take from industry vendors, without having to rely on monolithic systems and complex integrations. 
+For the BBC, TAMS provides the opportunity to build a more diverse media supply chain out of interoperable components which we take from industry vendors, without having to rely on monolithic systems and complex integrations.
 This enables us to execute on our technology strategy of "SaaS first", and make our supply chain more flexible and agile to the needs of the future.
 
-We started the "Cloudfit Production" project (which would become TAMS) back in 2018 with the goal of working out how to build fully cloud-native media production workflows. 
-We hypothesised a central media store of small segments, processed independently without critical paths through the system. 
-We developed a number of services and demonstrations, showing ingest and output of streams (including uncompressed video) and files, along with experimental designs for scaleable processing. 
+We started the "Cloudfit Production" project (which would become TAMS) back in 2018 with the goal of working out how to build fully cloud-native media production workflows.
+We hypothesised a central media store of small segments, processed independently without critical paths through the system.
+We developed a number of services and demonstrations, showing ingest and output of streams (including uncompressed video) and files, along with experimental designs for scaleable processing.
 Our work with [The Watches](https://www.bbc.co.uk/rd/articles/2022-04-video-cloud-media-store-ingest-service) gave the project focus and showed the
 value of it in real production uses cases. Eventually it became clear that the value
 was in the interface (rather than the implementation), and we were able to open

@@ -11,6 +11,8 @@ tags:
     - Press
     - TVBEurope
     - Techex
+redirect_from:
+    - /2025/12/11/TVBEurope-arcticle.html
 ---
 
 TVBEurope have publised a dedicated three page article focusing on TAMS in their December issue.
