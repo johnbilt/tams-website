@@ -11,3 +11,6 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Faster file watching on Windows during local `jekyll serve`
 gem "wdm", "~> 0.1.1", platforms: [:mingw, :mswin, :x64_mingw]
+
+# redirect_from capability
+gem "jekyll-redirect-from"

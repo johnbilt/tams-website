@@ -15,6 +15,8 @@ tags:
     - Player
     - Guest Post
     - Konstrukt
+redirect_from:
+    - /2026/09/10/Omakase-live-playback.html
 ---
 
 We welcome a guest writer Mislav Đomlija, Software Engineer at Konstrukt — the company behind the open-source Omakase Player — to introduce the live playback from TAMS functionality.

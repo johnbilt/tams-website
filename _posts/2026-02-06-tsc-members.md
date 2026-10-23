@@ -11,11 +11,13 @@ tags:
     - Governance
     - TSC
     - Open Source
+redirect_from:
+    - /2026/02/06/tsc-members.html
 ---
 
 This post is intended to support the [communication](https://github.com/bbc/tams/blob/main/GOVERNANCE.md) set out on 28<sup>th</sup> January 2026, which details the process of moving TAMS towards open governance. This document details how the remaining two seats on the initial TAMS TSC will be filled.
 
-The proposed TSC is composed as follows:  
+The proposed TSC is composed as follows:
 <br/>**_TSC Members_**
 
 _The TSC is intended to be a balanced mixture of members from the community of technology vendors, of broadcasters and customers of TAMS, alongside the BBC R&D team working to evolve TAMS across the board. It is expected this mix will change in time._
@@ -32,7 +34,7 @@ _At the time of writing, the TSC membership is still being identified, and we wo
 
 As such, there are 2 open 'seats' on the TSC. These two seats will be appointed by the initial TSC members by a simple majority vote.
 
-All expressions of interest will be considered, however to maintain a balance of roles in the TSC, the selection will be subject to the person specification below:  
+All expressions of interest will be considered, however to maintain a balance of roles in the TSC, the selection will be subject to the person specification below:
 <br/>Seat 1: An engineer, solution architect or equivalent involved with a broadcaster or content owner, who understands and has been involved in TAMS for some time, is aligned with the vision and principles of the technology, and is considering rolling it out.
 
 Seat 2: An engineer, solution architect or equivalent involved with a vendor who makes a TAMS-native technology which is being trialled by customers. They should have a deep understanding of the technology and be aligned with the vision for TAMS and our principles

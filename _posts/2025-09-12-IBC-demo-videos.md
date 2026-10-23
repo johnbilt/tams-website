@@ -13,6 +13,8 @@ tags:
     - Reuters
     - Demo
     - AWS
+redirect_from:
+    - /2025/09/12/IBC-demo-videos.html
 ---
 
 This blog includes the details of the two TAMS demonstrations at IBC 2025.  These can be seen on the AWS booth in Hall 5.

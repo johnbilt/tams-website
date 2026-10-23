@@ -8,6 +8,8 @@ image: /images/blog_images/2026-brand-00-header.png
 hero_image: /images/blog_images/2026-brand-00-header.png
 tags:
     - Brand
+redirect_from:
+    - /2026/09/02/TAMS-branding.html
 ---
 
 TAMS — the Time-addressable Media Store — is an open specification for storing and reading media by time rather than by file. Until now, the 'logo' has been something we cobbled together to put on slides and stickers. That changes today.

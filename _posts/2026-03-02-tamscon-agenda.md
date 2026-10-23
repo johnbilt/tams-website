@@ -11,13 +11,15 @@ tags:
     - TAMSCon
     - Events
     - Community
+redirect_from:
+    - /2026/03/02/tamscon-agenda.html
 ---
 
 The full programme for the TAMSCon is now available to download and view.
 
 Please note: the in person option is now full however you can still sign up to attend TAMSCon virtually.  Click [here to sign up](https://aws-experience.com/emea/uki/e/dec59/tamscon-1).
 
-### Day 1 
+### Day 1
 
 Day 1 of TAMSCon will focus on the highest priority topics in the community today.  With updates from key customers and partners to how TAMS will be governed going forward.  In the afternoon there will be multiple talk tracks providing session from those that are new to TAMS to diving into some of the latest developments.  For the non-technical there is a dedicated business track to understand the value that TAMS can bring
 

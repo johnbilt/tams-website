@@ -11,6 +11,8 @@ tags:
     - Governance
     - TSC
     - Community
+redirect_from:
+    - /2026/04/15/new-tsc-members.html
 ---
 
 The Time Addressable Media Store (TAMS) project today announced the appointment of James Elliott (Elliott Media) and Glenn Pedersen (CuttingRoom) to its initial Technical Steering Committee (TSC), marking a significant milestone in the project's transition to full open source governance.
@@ -29,14 +31,14 @@ The two new TSC members bring valuable industry perspective to the committee:
 
 The TSC purposefully brings together a balanced mix of technology vendors, broadcasters, and TAMS customers, alongside the BBC Research & Development team that has been instrumental in developing the TAMS specification.
 
-The TAMS initial Technical Steering Committee is composed of the following members: 
+The TAMS initial Technical Steering Committee is composed of the following members:
 
-* Sam Mesterton-Gibbons (BBC) - Chair 
-* James Sandford (BBC) 
-* Richard Lynton-Evans (BBC) 
-* John Biltcliffe (AWS) 
-* Chris Swan (AWS) 
-* James Elliott (Elliott Media) 
+* Sam Mesterton-Gibbons (BBC) - Chair
+* James Sandford (BBC)
+* Richard Lynton-Evans (BBC)
+* John Biltcliffe (AWS)
+* Chris Swan (AWS)
+* James Elliott (Elliott Media)
 * Glenn Pedersen (CuttingRoom)
 
 Following this transition period, once the governance framework is established, it is expected that the TSC will be rebalanced so that no organisation controls more than one vote. All those who applied to join the TSC in this round will be invited back at that point to be considered for the updated TSC, plus there will be the opportunity for new individuals to express their interest.
