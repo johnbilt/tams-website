@@ -11,6 +11,8 @@ tags:
     - IBC
     - Awards
     - Reuters
+redirect_from:
+    - /2025/12/01/broadcast-award.html
 ---
 
 On Thursday 27th November the [IBC demonstration of Next Generation News Distribution using TAMS](/2025/09/12/IBC-demo-videos.html) won the Broadcast Tech Innovation award.
@@ -34,7 +36,7 @@ A huge thank you to all the companies who were involved in the IBC demonstration
 - Sobey / Sony Hive MAM
 - Omakase Player
 - Mimir
-- Matrox 
+- Matrox
 - CuttingRoom
 - Adobe
 - Drastic Technologies

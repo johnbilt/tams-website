@@ -11,6 +11,8 @@ tags:
     - TAMSCon
     - Events
     - Community
+redirect_from:
+    - /2026/02/12/tamscon-signup.html
 ---
 
 Signup is now available for the the first ever TAMS Community event TAMSCon.

@@ -11,6 +11,8 @@ tags:
     - Press
     - TVBEurope
     - Techex
+redirect_from:
+    - /2026/02/27/TVBEurope-Webinar.html
 ---
 
 TVBEurope and Techex webinar 'Is it Primetime for TAMS?' is now available to watch online, plus a dedicated article on the TVBEurope website.
@@ -27,8 +29,8 @@ On Thursday 12th February 12th TVBEurope and techex hosted a webinar to explore 
 * James Elliott (Managing Director, Elliott Media)
 * Rebecca Light (Group Head of Content Mngmt & Quality Control - Content Technology & Innovation, Sky)
 
-The webinar is now available online.  Head to the [website](https://events.futureb2b.com/on-demand/1831/is-it-primetime-for-tams//) and register to be able to watch the whole session. 
+The webinar is now available online.  Head to the [website](https://events.futureb2b.com/on-demand/1831/is-it-primetime-for-tams//) and register to be able to watch the whole session.
 
-### TVBEurope article 
+### TVBEurope article
 
 TVBEurope has also taken some of the key themes and discussion topics from the webinar and published them as a dedicated article.  This can be viewed online at the [TVBEurope website](https://www.tvbeurope.com/live-production/how-tams-is-revolutionising-media-workflows-for-agility-and-scale)

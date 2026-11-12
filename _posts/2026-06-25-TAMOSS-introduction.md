@@ -2,7 +2,7 @@
 layout: post
 date: 2026-06-25
 title: TAMS is a Kubernetes-shaped problem
-subtitle: Guest post from David O'Dwyer at LiveWyer 
+subtitle: Guest post from David O'Dwyer at LiveWyer
 image: /images/blog_images/2026-livewyer-blog-heading.png
 hero_image: /images/blog_images/2026-livewyer-blog-heading.png
 hero_height: is-small
@@ -17,6 +17,8 @@ tags:
     - Cloud Native Media
     - Open Source
     - Guest Post
+redirect_from:
+    - /2026/06/25/TAMOSS-introduction.html
 
 ---
 
