@@ -56,6 +56,6 @@ When we [announced the move to open governance](https://tams.org/2026/01/28/tams
 
 Overall, TAMS is one part of a wider transformation: towards granting media organisations the agility to adapt and respond to new opportunities and the needs of their audiences. It does that by fostering an open ecosystem, built on interoperable foundations, defined as software. An ecosystem moving at the speed our industry, and our audiences, demand.
 
-_Originally published at https://www.bbc.co.uk/rd/articles/2026-09-tams-open-governance-linux-foundation._
+_Originally published at [https://www.bbc.co.uk/rd/articles/2026-09-tams-open-governance-linux-foundation](https://www.bbc.co.uk/rd/articles/2026-09-tams-open-governance-linux-foundation)._
 
 _The Linux Foundation and The Linux Foundation logo design are registered trademarks of The Linux Foundation. Linux is a registered trademark of Linus Torvalds_
