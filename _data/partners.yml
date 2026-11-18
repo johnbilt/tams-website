@@ -35,6 +35,7 @@
 - name: AWS
   product: TAMS API Implementation
   logo: /images/solutions/logo_aws.svg
+  image: /images/solutions/card_awstamsapi.png
   description: >
     Implementation of the TAMS API released by AWS, built on serverless AWS services. Designed to help customers and partners start their journey with TAMS. It deploys into your own AWS account with AWS SAM, and each release implements a published version of the TAMS specification.
   link: https://github.com/awslabs/time-addressable-media-store
@@ -45,6 +46,7 @@
 - name: AWS
   product: TAMS Tools
   logo: /images/solutions/logo_aws.svg
+  image: /images/solutions/card_awstamstools.png
   description: >
     A collection of tools from AWS to complement the AWS TAMS API implementation. Includes a web UI with an embedded Omakase player, media processing workflows and more. Optional components add HLS playback, HLS and FFmpeg-based ingest, replication between stores and a loop recorder.
   link: https://github.com/aws-samples/time-addressable-media-store-tools
@@ -64,6 +66,7 @@
 
 - name: hootworks
   product: TAMS in FFmpeg
+  image: /images/solutions/card_ffmpeg.png
   description: >
     A fork of FFmpeg that adds a TAMS demuxer and muxer to libavformat, so FFmpeg can read media from and write media to a TAMS store.
   link: https://github.com/hootworks/FFmpeg/tree/tams
