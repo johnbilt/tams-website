@@ -31,3 +31,59 @@
   type: open-source
   functions:
     - browse
+
+- name: AWS
+  product: TAMS API Implementation
+  description: >
+    Implementation of the TAMS API released by AWS, built on serverless AWS services. Designed to help customers and partners start their journey with TAMS.
+  link: https://github.com/awslabs/time-addressable-media-store
+  type: open-source
+  functions:
+    - store
+
+- name: AWS
+  product: TAMS Tools
+  description: >
+    A collection of tools from AWS to complement the AWS TAMS API implementation. Includes a web UI with an embedded Omakase player, media processing workflows and more.
+  link: https://github.com/awslabs/time-addressable-media-store-tools
+  type: open-source
+  functions:
+    - browse
+    - processing
+
+- name: LiveWyer
+  product: TAMOSS
+  description: >
+    A Kubernetes-native implementation of the TAMS 8.2 API, installed and managed by a Kubernetes operator. Ships deployment profiles from a local Kind cluster and single ARM64 edge nodes through to multi-server production clusters, with support for external PostgreSQL, S3-compatible storage and OAuth2/OIDC authentication. Includes a web UI for browsing the store.
+  link: https://github.com/livewyer-ops/tamoss/
+  type: open-source
+  functions:
+    - store
+
+- name: hootworks
+  product: TAMS in FFmpeg
+  description: >
+    A fork of FFmpeg that adds a TAMS demuxer and muxer to libavformat, so FFmpeg can read media from and write media to a TAMS store.
+  link: https://github.com/hootworks/FFmpeg/tree/tams
+  type: open-source
+  functions:
+    - ingest
+    - export
+
+- name: LiveWyer
+  product: TAMS Checker
+  description: >
+    A free tool that tests your TAMS implementation's API responses, resource workflows and media transfers against the TAMS 8.2 specification, as well as implementation decisions captured outside the API spec. Each run produces an easy-to-read report, plus JSON and JUnit output for engineering teams and vendors. The checker creates and removes its own test data but leaves some artefacts, as the current specification requires, so run it against a dedicated test instance.
+  link: https://check.tams.lwy.sh/
+  type: free-tool
+  functions:
+    - testing
+
+- name: LiveWyer & Techex
+  product: TAMS in Practice
+  description: >
+    An interactive, guided walk-through tutorial that runs entirely in your browser on TASM, LiveWyer's TAMS implementation compiled to WebAssembly. Aimed at technical staff who are new to TAMS or want to firm up their knowledge, it is a gentle introduction to the TAMS API and media storage principles.
+  link: https://demo.tams.lwy.sh/
+  type: free-tool
+  functions:
+    - learning
