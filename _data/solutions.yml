@@ -10,39 +10,43 @@
 #   type:         open-source | commercial | professional-services | free-tool
 #   functions:    list of function tags used by the filter
 
-- solution: tx darwin
-  company: Techex
-  logo: /images/solutions/logo_techex.png
-  image: /images/solutions/card_txdarwin.png
-  description: >
-    tx darwin provides comprehensive manipulation and syncrhonisation of transport streams ahead of writing to a TAMS store. tx darwin is a software platform which runs in the cloud or on-prem supporting compressed or uncompressed media workflows. Now, it's possible to synchronise miltiple feeds on writing, write as multiple essences or a single combined stream and even perform video.and audio confromance ahead of a TAMS media store.
-  link: https://example.com
-  type: commercial
-  functions:
-    - ingest
+# ── On hold: hidden from the page for now. Remove the leading "# " to restore. ──
 
-- solution: CuttingRoom Web Based Editing
-  company: CuttingRoom
-  logo: /images/solutions/logo_cuttingroom.png
-  image: /images/solutions/card_webbasedediting.png
-  description: >
-    Edit directly from your TAMS store in the CuttingRoom Cloud Editor. Add growing TAMS recordings even directly to your timeline. Shoot directly to your TAMS store with the mobile news gathering app CuttingRoom Reporter, enabling editing while shooting.
-  link: https://www.cuttingroom.com/
-  type: commercial
-  functions:
-    - edit
-    - camera
+# - solution: tx darwin
+#   company: Techex
+#   logo: /images/solutions/logo_techex.png
+#   image: /images/solutions/card_txdarwin.png
+#   description: >
+#     tx darwin provides comprehensive manipulation and syncrhonisation of transport streams ahead of writing to a TAMS store. tx darwin is a software platform which runs in the cloud or on-prem supporting compressed or uncompressed media workflows. Now, it's possible to synchronise miltiple feeds on writing, write as multiple essences or a single combined stream and even perform video.and audio confromance ahead of a TAMS media store.
+#   link: https://example.com
+#   type: commercial
+#   functions:
+#     - ingest
 
-- solution: TAMS Store Browser
-  company: CuttingRoom
-  logo: /images/solutions/logo_cuttingroom.png
-  image: /images/solutions/card_tamsstorebrowser.png
-  description: >
-     This project is a fork of AWS TAMS Tools, an open-source project by Amazon Web Services
-  link: https://github.com/cuttingroom/tamstool
-  type: open-source
-  functions:
-    - browse
+# - solution: CuttingRoom Web Based Editing
+#   company: CuttingRoom
+#   logo: /images/solutions/logo_cuttingroom.png
+#   image: /images/solutions/card_webbasedediting.png
+#   description: >
+#     Edit directly from your TAMS store in the CuttingRoom Cloud Editor. Add growing TAMS recordings even directly to your timeline. Shoot directly to your TAMS store with the mobile news gathering app CuttingRoom Reporter, enabling editing while shooting.
+#   link: https://www.cuttingroom.com/
+#   type: commercial
+#   functions:
+#     - edit
+#     - camera
+
+# - solution: TAMS Store Browser
+#   company: CuttingRoom
+#   logo: /images/solutions/logo_cuttingroom.png
+#   image: /images/solutions/card_tamsstorebrowser.png
+#   description: >
+#      This project is a fork of AWS TAMS Tools, an open-source project by Amazon Web Services
+#   link: https://github.com/cuttingroom/tamstool
+#   type: open-source
+#   functions:
+#     - browse
+
+# ── Live entries ──
 
 - solution: TAMS API Implementation
   company: AWS
