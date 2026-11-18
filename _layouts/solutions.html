@@ -30,8 +30,8 @@ layout: default
         <div class="sol-btns">
           <button class="sol-btn func is-active" data-filter="all">All</button>
           {%- assign all_functions = "" -%}
-          {%- for partner in site.data.partners -%}
-            {%- for func in partner.functions -%}
+          {%- for item in site.data.solutions -%}
+            {%- for func in item.functions -%}
               {%- unless all_functions contains func -%}
                 {%- if all_functions == "" -%}{%- assign all_functions = func -%}
                 {%- else -%}{%- assign all_functions = all_functions | append: "," | append: func -%}{%- endif -%}
@@ -50,33 +50,33 @@ layout: default
   <p id="sol-no-results" class="sol-no-results" hidden>No solutions match the selected filters.</p>
 
   <div class="sol-grid" id="sol-grid">
-    {%- assign sorted_partners = site.data.partners | sort_natural: "product" -%}
-    {%- for partner in sorted_partners -%}
-    <div class="sol-card" data-type="{{ partner.type }}" data-functions="{{ partner.functions | join: ',' }}">
-      {%- if partner.image -%}
-      <div class="sol-card-image"><img src="{{ partner.image | relative_url }}" alt="{{ partner.product | escape }}" loading="lazy"></div>
+    {%- assign sorted_solutions = site.data.solutions | sort_natural: "solution" -%}
+    {%- for item in sorted_solutions -%}
+    <div class="sol-card" data-type="{{ item.type }}" data-functions="{{ item.functions | join: ',' }}">
+      {%- if item.image -%}
+      <div class="sol-card-image"><img src="{{ item.image | relative_url }}" alt="{{ item.solution | escape }}" loading="lazy"></div>
       {%- else -%}
       <div class="sol-card-image is-blank" aria-hidden="true"></div>
       {%- endif -%}
       <div class="sol-card-body">
         <div class="sol-card-head">
-          {%- if partner.logo -%}<img class="sol-logo" src="{{ partner.logo | relative_url }}" alt="{{ partner.name | escape }} logo">{%- endif -%}
+          {%- if item.logo -%}<img class="sol-logo" src="{{ item.logo | relative_url }}" alt="{{ item.company | escape }} logo">{%- endif -%}
           <div>
-            <p class="sol-product">{{ partner.product }}</p>
-            <p class="sol-company">{{ partner.name }}</p>
+            <p class="sol-product">{{ item.solution }}</p>
+            <p class="sol-company">{{ item.company }}</p>
           </div>
         </div>
-        <p class="sol-desc">{{ partner.description | strip_newlines }}</p>
+        <p class="sol-desc">{{ item.description | strip_newlines }}</p>
         <div class="sol-tags">
-          {%- if partner.type == "open-source" -%}<span class="sol-tag type">Open Source</span>
-          {%- elsif partner.type == "commercial" -%}<span class="sol-tag type">Commercial</span>
-          {%- elsif partner.type == "professional-services" -%}<span class="sol-tag type">Professional Services</span>
-          {%- elsif partner.type == "free-tool" -%}<span class="sol-tag type">Free Tool</span>{%- endif -%}
-          {%- for func in partner.functions -%}<span class="sol-tag func">{{ func | capitalize }}</span>{%- endfor -%}
+          {%- if item.type == "open-source" -%}<span class="sol-tag type">Open Source</span>
+          {%- elsif item.type == "commercial" -%}<span class="sol-tag type">Commercial</span>
+          {%- elsif item.type == "professional-services" -%}<span class="sol-tag type">Professional Services</span>
+          {%- elsif item.type == "free-tool" -%}<span class="sol-tag type">Free Tool</span>{%- endif -%}
+          {%- for func in item.functions -%}<span class="sol-tag func">{{ func | capitalize }}</span>{%- endfor -%}
         </div>
       </div>
-      {%- if partner.link -%}
-      <a class="sol-card-link" href="{{ partner.link }}" target="_blank" rel="noopener noreferrer">More information &#8599;</a>
+      {%- if item.link -%}
+      <a class="sol-card-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">More information &#8599;</a>
       {%- endif -%}
     </div>
     {%- endfor -%}

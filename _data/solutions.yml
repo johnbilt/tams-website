@@ -1,5 +1,17 @@
-- name: Techex
-  product: tx darwin
+# Solutions directory (/solutions/). Cards are sorted alphabetically by `solution`.
+#
+# Fields:
+#   solution:     solution name, shown as the card title (required)
+#   company:      company or project owner, shown under the title (required)
+#   logo:         /images/solutions/logo_<companyname>.(png|svg)  (optional)
+#   image:        /images/solutions/card_<solutionname>.png, shown 100px high (optional)
+#   description:  card text (required)
+#   link:         "More information" URL (optional)
+#   type:         open-source | commercial | professional-services | free-tool
+#   functions:    list of function tags used by the filter
+
+- solution: tx darwin
+  company: Techex
   logo: /images/solutions/logo_techex.png
   image: /images/solutions/card_txdarwin.png
   description: >
@@ -9,8 +21,8 @@
   functions:
     - ingest
 
-- name: CuttingRoom
-  product: Web Based Editing
+- solution: CuttingRoom Web Based Editing
+  company: CuttingRoom
   logo: /images/solutions/logo_cuttingroom.png
   image: /images/solutions/card_webbasedediting.png
   description: >
@@ -21,8 +33,8 @@
     - edit
     - camera
 
-- name: CuttingRoom
-  product: TAMS Store Browser
+- solution: TAMS Store Browser
+  company: CuttingRoom
   logo: /images/solutions/logo_cuttingroom.png
   image: /images/solutions/card_tamsstorebrowser.png
   description: >
@@ -32,8 +44,8 @@
   functions:
     - browse
 
-- name: AWS
-  product: TAMS API Implementation
+- solution: TAMS API Implementation
+  company: AWS
   logo: /images/solutions/logo_aws.svg
   image: /images/solutions/card_awstamsapi.png
   description: >
@@ -43,8 +55,8 @@
   functions:
     - store
 
-- name: AWS
-  product: TAMS Tools
+- solution: TAMS Tools
+  company: AWS
   logo: /images/solutions/logo_aws.svg
   image: /images/solutions/card_awstamstools.png
   description: >
@@ -55,8 +67,8 @@
     - browse
     - processing
 
-- name: LiveWyer
-  product: TAMOSS
+- solution: TAMOSS
+  company: LiveWyer
   description: >
     A Kubernetes-native implementation of the TAMS API, installed and managed by a Kubernetes operator. Ships deployment profiles from a local Kind cluster and single ARM64 edge nodes through to multi-server production clusters, with support for external PostgreSQL, S3-compatible storage and OAuth2/OIDC authentication. Includes a web UI for browsing the store.
   link: https://github.com/livewyer-ops/tamoss/
@@ -64,8 +76,8 @@
   functions:
     - store
 
-- name: hootworks
-  product: TAMS in FFmpeg
+- solution: TAMS in FFmpeg
+  company: hootworks
   image: /images/solutions/card_ffmpeg.png
   description: >
     A fork of FFmpeg that adds a TAMS demuxer and muxer to libavformat, so FFmpeg can read media from and write media to a TAMS store.
@@ -75,8 +87,8 @@
     - ingest
     - export
 
-- name: LiveWyer
-  product: TAMS Checker
+- solution: TAMS Checker
+  company: LiveWyer
   description: >
     A free tool that tests your TAMS implementation's API responses, resource workflows and media transfers against the TAMS 8.2 specification, as well as implementation decisions captured outside the API spec. Each run produces an easy-to-read report, plus JSON and JUnit output for engineering teams and vendors. The checker creates and removes its own test data but leaves some artefacts, as the current specification requires, so run it against a dedicated test instance.
   link: https://check.tams.lwy.sh/
@@ -84,8 +96,8 @@
   functions:
     - testing
 
-- name: LiveWyer & Techex
-  product: TAMS in Practice
+- solution: TAMS in Practice
+  company: LiveWyer & Techex
   description: >
     An interactive, guided walk-through tutorial that runs entirely in your browser on TASM, LiveWyer's TAMS implementation compiled to WebAssembly. Aimed at technical staff who are new to TAMS or want to firm up their knowledge, it is a gentle introduction to the TAMS API and media storage principles.
   link: https://demo.tams.lwy.sh/
