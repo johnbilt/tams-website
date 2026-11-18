@@ -383,8 +383,9 @@ img{max-width:100%;height:auto}
 
 .sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sol-card{display:flex;flex-direction:column;border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--white)}
-.sol-card-image{aspect-ratio:15/4;background:var(--paper)}
-.sol-card-image img{width:100%;height:100%;object-fit:cover;display:block}
+.sol-card-image{height:100px;flex:0 0 100px;overflow:hidden;background:var(--paper)}
+.sol-card-image.is-blank{background:var(--amber)}
+.sol-card-image img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
 .sol-card-body{padding:18px 20px;display:flex;flex-direction:column;flex:1}
 .sol-card-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
 .sol-logo{max-height:38px;max-width:76px;width:auto;height:auto;object-fit:contain;flex-shrink:0}

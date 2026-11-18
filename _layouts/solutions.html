@@ -55,6 +55,8 @@ layout: default
     <div class="sol-card" data-type="{{ partner.type }}" data-functions="{{ partner.functions | join: ',' }}">
       {%- if partner.image -%}
       <div class="sol-card-image"><img src="{{ partner.image | relative_url }}" alt="{{ partner.product | escape }}" loading="lazy"></div>
+      {%- else -%}
+      <div class="sol-card-image is-blank" aria-hidden="true"></div>
       {%- endif -%}
       <div class="sol-card-body">
         <div class="sol-card-head">
