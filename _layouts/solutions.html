@@ -22,6 +22,7 @@ layout: default
           <button class="sol-btn type" data-filter="open-source">Open Source</button>
           <button class="sol-btn type" data-filter="commercial">Commercial</button>
           <button class="sol-btn type" data-filter="professional-services">Professional Services</button>
+          <button class="sol-btn type" data-filter="free-tool">Free Tool</button>
         </div>
       </div>
       <div class="sol-filter-group">
@@ -49,7 +50,8 @@ layout: default
   <p id="sol-no-results" class="sol-no-results" hidden>No solutions match the selected filters.</p>
 
   <div class="sol-grid" id="sol-grid">
-    {%- for partner in site.data.partners -%}
+    {%- assign sorted_partners = site.data.partners | sort_natural: "product" -%}
+    {%- for partner in sorted_partners -%}
     <div class="sol-card" data-type="{{ partner.type }}" data-functions="{{ partner.functions | join: ',' }}">
       {%- if partner.image -%}
       <div class="sol-card-image"><img src="{{ partner.image | relative_url }}" alt="{{ partner.product | escape }}" loading="lazy"></div>
@@ -66,7 +68,8 @@ layout: default
         <div class="sol-tags">
           {%- if partner.type == "open-source" -%}<span class="sol-tag type">Open Source</span>
           {%- elsif partner.type == "commercial" -%}<span class="sol-tag type">Commercial</span>
-          {%- elsif partner.type == "professional-services" -%}<span class="sol-tag type">Professional Services</span>{%- endif -%}
+          {%- elsif partner.type == "professional-services" -%}<span class="sol-tag type">Professional Services</span>
+          {%- elsif partner.type == "free-tool" -%}<span class="sol-tag type">Free Tool</span>{%- endif -%}
           {%- for func in partner.functions -%}<span class="sol-tag func">{{ func | capitalize }}</span>{%- endfor -%}
         </div>
       </div>

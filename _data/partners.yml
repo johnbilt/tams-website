@@ -1,7 +1,7 @@
 - name: Techex
   product: tx darwin
-  logo: /images/partners/techex.png
-  image: /images/partners/techex_txdarwin.png
+  logo: /images/solutions/logo_techex.png
+  image: /images/solutions/card_txdarwin.png
   description: >
     tx darwin provides comprehensive manipulation and syncrhonisation of transport streams ahead of writing to a TAMS store. tx darwin is a software platform which runs in the cloud or on-prem supporting compressed or uncompressed media workflows. Now, it's possible to synchronise miltiple feeds on writing, write as multiple essences or a single combined stream and even perform video.and audio confromance ahead of a TAMS media store.
   link: https://example.com
@@ -11,8 +11,8 @@
 
 - name: CuttingRoom
   product: Web Based Editing
-  logo: /images/partners/cuttingroom.png
-  image: /images/partners/cuttingroom_editplatform.png
+  logo: /images/solutions/logo_cuttingroom.png
+  image: /images/solutions/card_webbasedediting.png
   description: >
     Edit directly from your TAMS store in the CuttingRoom Cloud Editor. Add growing TAMS recordings even directly to your timeline. Shoot directly to your TAMS store with the mobile news gathering app CuttingRoom Reporter, enabling editing while shooting.
   link: https://www.cuttingroom.com/
@@ -23,8 +23,8 @@
 
 - name: CuttingRoom
   product: TAMS Store Browser
-  logo: /images/partners/cuttingroom.png
-  image: /images/partners/cuttingroom_tamstool.png
+  logo: /images/solutions/logo_cuttingroom.png
+  image: /images/solutions/card_tamsstorebrowser.png
   description: >
      This project is a fork of AWS TAMS Tools, an open-source project by Amazon Web Services
   link: https://github.com/cuttingroom/tamstool
@@ -34,8 +34,9 @@
 
 - name: AWS
   product: TAMS API Implementation
+  logo: /images/solutions/logo_aws.svg
   description: >
-    Implementation of the TAMS API released by AWS, built on serverless AWS services. Designed to help customers and partners start their journey with TAMS.
+    Implementation of the TAMS API released by AWS, built on serverless AWS services. Designed to help customers and partners start their journey with TAMS. It deploys into your own AWS account with AWS SAM, and each release implements a published version of the TAMS specification.
   link: https://github.com/awslabs/time-addressable-media-store
   type: open-source
   functions:
@@ -43,9 +44,10 @@
 
 - name: AWS
   product: TAMS Tools
+  logo: /images/solutions/logo_aws.svg
   description: >
-    A collection of tools from AWS to complement the AWS TAMS API implementation. Includes a web UI with an embedded Omakase player, media processing workflows and more.
-  link: https://github.com/awslabs/time-addressable-media-store-tools
+    A collection of tools from AWS to complement the AWS TAMS API implementation. Includes a web UI with an embedded Omakase player, media processing workflows and more. Optional components add HLS playback, HLS and FFmpeg-based ingest, replication between stores and a loop recorder.
+  link: https://github.com/aws-samples/time-addressable-media-store-tools
   type: open-source
   functions:
     - browse
@@ -54,7 +56,7 @@
 - name: LiveWyer
   product: TAMOSS
   description: >
-    A Kubernetes-native implementation of the TAMS 8.2 API, installed and managed by a Kubernetes operator. Ships deployment profiles from a local Kind cluster and single ARM64 edge nodes through to multi-server production clusters, with support for external PostgreSQL, S3-compatible storage and OAuth2/OIDC authentication. Includes a web UI for browsing the store.
+    A Kubernetes-native implementation of the TAMS API, installed and managed by a Kubernetes operator. Ships deployment profiles from a local Kind cluster and single ARM64 edge nodes through to multi-server production clusters, with support for external PostgreSQL, S3-compatible storage and OAuth2/OIDC authentication. Includes a web UI for browsing the store.
   link: https://github.com/livewyer-ops/tamoss/
   type: open-source
   functions:

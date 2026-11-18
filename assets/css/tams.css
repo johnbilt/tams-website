@@ -383,7 +383,7 @@ img{max-width:100%;height:auto}
 
 .sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sol-card{display:flex;flex-direction:column;border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--white)}
-.sol-card-image{aspect-ratio:3/2;background:var(--paper)}
+.sol-card-image{aspect-ratio:15/4;background:var(--paper)}
 .sol-card-image img{width:100%;height:100%;object-fit:cover;display:block}
 .sol-card-body{padding:18px 20px;display:flex;flex-direction:column;flex:1}
 .sol-card-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
@@ -394,7 +394,7 @@ img{max-width:100%;height:auto}
 .sol-desc.is-clamped{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
 .sol-desc-toggle{align-self:flex-start;margin-top:6px;border:0;background:transparent;padding:0;font-size:12px;font-weight:600;color:var(--amber-ink);cursor:pointer}
 .sol-desc-toggle:hover{text-decoration:underline}
-.sol-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.sol-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:14px}
 .sol-tag{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.04em;border-radius:999px;padding:2px 8px}
 .sol-tag.type{color:var(--amber-ink);background:rgba(229,161,68,0.12);border:1px solid rgba(229,161,68,0.35)}
 .sol-tag.func{color:var(--soft);background:var(--paper);border:1px solid var(--hair)}
