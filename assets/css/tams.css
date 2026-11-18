@@ -383,7 +383,7 @@ img{max-width:100%;height:auto}
 
 .sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .sol-card{display:flex;flex-direction:column;border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--white)}
-.sol-card-image{height:100px;flex:0 0 100px;overflow:hidden;background:var(--paper)}
+.sol-card-image{height:100px;flex:0 0 100px;overflow:hidden;background:var(--paper);border-bottom:1px solid var(--hair);box-sizing:border-box}
 .sol-card-image.is-blank{background:var(--paper)}
 .sol-card-image img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
 .sol-card-body{padding:18px 20px;display:flex;flex-direction:column;flex:1}
