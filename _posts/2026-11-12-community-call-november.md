@@ -17,8 +17,8 @@ tags:
 
 The TAMS community call was back on Wednesday 11th November, and for the first time we're sharing the recording publicly. We intend to publish the recording of every community call from now on, so anyone who couldn't make it live can catch up.
 
-<div style="text-align: center;">
-<iframe width="720" height="405" src="https://www.youtube.com/embed/yn2BTBkTops" title="TAMS Community Call - November 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video">
+<iframe src="https://www.youtube.com/embed/yn2BTBkTops" title="TAMS Community Call - November 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## What we covered
