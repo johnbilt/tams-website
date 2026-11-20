@@ -26,7 +26,7 @@ The TAMS community call was back on Wednesday 11th November, and for the first t
 - **Time-addressable Data Store API ([TADS](https://github.com/bbc/tads))** - James Sandford
 - **What we saw at [IBC]({% post_url 2026-09-08-IBC2026 %}) and On Air** - John Biltcliffe
 - **TAMS Specification updates** - Sam Mesterton-Gibbons
-- **Voice of the Vendor: Broadcast Bionics** - Dan McQuillin on the impact of TAMS in visualised radio
+- **Voice of the Vendor: [Broadcast Bionics](https://www.bionics.co.uk/)** - Dan McQuillin on the impact of TAMS in visualised radio
 
 ## Join the next call
 
