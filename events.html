@@ -14,26 +14,13 @@ hero_image: /images/events_background.png
   <div class="sec-eyebrow">Upcoming</div>
   <h2 class="sec-title">Next up</h2>
 
-  <div class="event-card">
-    <div class="ev-date">
-      <div class="d">11</div>
-      <div class="m">Nov</div>
-      <div class="t">4:00PM GMT</div>
-    </div>
-    <div>
-      <span class="ev-cat">Community Call</span>
-      <h3 class="ev-title">TAMS Community Call &#8212; November</h3>
-      <p class="ev-desc">Our community call is back for November, and the TAMS community keeps on growing. Join us for one hour on Zoom.</p>
-      <p class="ev-cover-h">Here's what we've got lined up:</p>
-      <ul class="ev-cover">
-        <li><strong>TAMS Updates</strong> &#8212; the latest on events and software releases</li>
-        <li><strong>Community Spotlight</strong> &#8212; share your TAMS use cases and launches</li>
-        <li><strong>TAMS Governance</strong> &#8212; where TAMS goes next</li>
-        <li><strong>Voice of the Vendor</strong> &#8212; a vendor (to be confirmed) on their TAMS journey</li>
-      </ul>
-      <div class="ev-actions">
-        <a class="btn" href="https://amazon.zoom.us/meeting/register/4bnnl4M5SW2P7bR3fbmdBw" target="_blank" rel="noopener noreferrer">Register here &#8594;</a>
-      </div>
+  <!-- No upcoming events. To add one, replace this ev-empty block with an event-card
+       (see git history of this file for the full event-card markup). -->
+  <div class="ev-empty">
+    <h3 class="ev-title">No events scheduled right now</h3>
+    <p class="ev-desc">The next TAMS community call and other events will be listed here as soon as dates are confirmed. In the meantime, catch up on recent events and recordings on the blog.</p>
+    <div class="ev-actions">
+      <a class="btn" href="{{ '/blog/' | relative_url }}">Read the blog &#8594;</a>
     </div>
   </div>
 
@@ -41,6 +28,12 @@ hero_image: /images/events_background.png
   <h2 class="sec-title">Past events</h2>
 
   <div class="past-grid">
+    <a class="past-card" href="{{ '/2026/11/12/community-call-november/' | relative_url }}">
+      <div class="pd">Nov 2026</div>
+      <h4>TAMS Community Call &#8212; November</h4>
+      <p>TADS, IBC and On Air, TAMS specification updates, and Broadcast Bionics on TAMS in visualised radio. Watch the recording.</p>
+      <span class="loc">&#9679; Online</span>
+    </a>
     <div class="past-card">
       <div class="pd">Sep 2026</div>
       <h4>IBC 2026</h4>

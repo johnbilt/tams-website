@@ -223,6 +223,10 @@ img{max-width:100%;height:auto}
 .ev-actions .btn{background:var(--amber);color:var(--navy)}
 .ev-actions .btn:hover{text-decoration:none;filter:brightness(1.05)}
 
+.ev-empty{border:1px dashed rgba(20,26,40,0.25);border-radius:12px;padding:32px;background:var(--paper)}
+.ev-empty .ev-title{margin-top:0}
+a.past-card{display:block;color:inherit;text-decoration:none}
+a.past-card:hover{text-decoration:none}
 .past-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .past-card{border:1px solid var(--hair);border-radius:10px;padding:22px;background:var(--white);transition:border-color .15s,box-shadow .15s}
 .past-card:hover{border-color:rgba(20,26,40,0.28);box-shadow:0 4px 14px rgba(20,26,40,0.08)}
